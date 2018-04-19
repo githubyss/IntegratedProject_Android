@@ -1,2 +1,9 @@
-include ':app'
-project(':app').projectDir = new File(settingsDir, '../app')
+//include ':app'
+//project(':app').projectDir = new File(settingsDir, '../app')
+
+include ':IntegratedAppModule_Android',
+        ':MorseCodeSdk_Android',
+        ':CommonKitSdk_Android'
+project(':IntegratedAppModule_Android').projectDir = new File(settingsDir, '../IntegratedAppModule_Android')
+project(':MorseCodeSdk_Android').projectDir = new File(settingsDir, '../MorseCodeSdk_Android')
+project(':CommonKitSdk_Android').projectDir = new File(settingsDir, '../CommonKitSdk_Android')
