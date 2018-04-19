@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../CommonKitSdk_Android/CommonKitSdk_Android.iml" filepath="$PROJECT_DIR$/../CommonKitSdk_Android/CommonKitSdk_Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IntegratedAppModule_Android/IntegratedAppModule_Android.iml" filepath="$PROJECT_DIR$/../IntegratedAppModule_Android/IntegratedAppModule_Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/IntegratedProject_Android.iml" filepath="$PROJECT_DIR$/IntegratedProject_Android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MorseCodeSdk_Android/MorseCodeSdk_Android.iml" filepath="$PROJECT_DIR$/../MorseCodeSdk_Android/MorseCodeSdk_Android.iml" />
     </modules>
   </component>
 </project>
