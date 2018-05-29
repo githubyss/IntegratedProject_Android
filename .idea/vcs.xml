@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../CommonKitSdk_Android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../EpaKits_android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../IntegratedAppModule_Android" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../MorseCodeSdk_Android" vcs="Git" />
   </component>
 </project>
