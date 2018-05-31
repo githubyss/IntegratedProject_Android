@@ -8,7 +8,6 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/../CommonKitSdk_Android" />
-            <option value="$PROJECT_DIR$/../EpaKits_android" />
             <option value="$PROJECT_DIR$/../IntegratedAppModule_Android" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/../MorseCodeSdk_Android" />
