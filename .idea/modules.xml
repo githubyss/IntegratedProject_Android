@@ -3,9 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../CommonKitSdk_Android/CommonKitSdk_Android.iml" filepath="$PROJECT_DIR$/../CommonKitSdk_Android/CommonKitSdk_Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../CommonNetworkSdk_Android/CommonNetworkSdk_Android.iml" filepath="$PROJECT_DIR$/../CommonNetworkSdk_Android/CommonNetworkSdk_Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../CommonResSdk_Android/CommonResSdk_Android.iml" filepath="$PROJECT_DIR$/../CommonResSdk_Android/CommonResSdk_Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../CommonUiSdk_Android/CommonUiSdk_Android.iml" filepath="$PROJECT_DIR$/../CommonUiSdk_Android/CommonUiSdk_Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ExperimentAppModule_Android/ExperimentAppModule_Android.iml" filepath="$PROJECT_DIR$/../ExperimentAppModule_Android/ExperimentAppModule_Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/../IntegratedAppModule_Android/IntegratedAppModule_Android.iml" filepath="$PROJECT_DIR$/../IntegratedAppModule_Android/IntegratedAppModule_Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/IntegratedProject_Android.iml" filepath="$PROJECT_DIR$/IntegratedProject_Android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../MorseCodeSdk_Android/MorseCodeSdk_Android.iml" filepath="$PROJECT_DIR$/../MorseCodeSdk_Android/MorseCodeSdk_Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MorseCodeAppModule_Android/MorseCodeSdk_Android.iml" filepath="$PROJECT_DIR$/../MorseCodeAppModule_Android/MorseCodeSdk_Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MorseCodeKitSdk_Android/MorseCodeKitSdk_Android.iml" filepath="$PROJECT_DIR$/../MorseCodeKitSdk_Android/MorseCodeKitSdk_Android.iml" />
     </modules>
   </component>
 </project>
