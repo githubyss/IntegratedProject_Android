@@ -9,8 +9,9 @@
       <module fileurl="file://$PROJECT_DIR$/../ExperimentAppModule_Android/ExperimentAppModule_Android.iml" filepath="$PROJECT_DIR$/../ExperimentAppModule_Android/ExperimentAppModule_Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/../IntegratedAppModule_Android/IntegratedAppModule_Android.iml" filepath="$PROJECT_DIR$/../IntegratedAppModule_Android/IntegratedAppModule_Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/IntegratedProject_Android.iml" filepath="$PROJECT_DIR$/IntegratedProject_Android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../MorseCodeAppModule_Android/MorseCodeSdk_Android.iml" filepath="$PROJECT_DIR$/../MorseCodeAppModule_Android/MorseCodeSdk_Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MorseCodeAppModule_Android/MorseCodeAppModule_Android.iml" filepath="$PROJECT_DIR$/../MorseCodeAppModule_Android/MorseCodeAppModule_Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/../MorseCodeKitSdk_Android/MorseCodeKitSdk_Android.iml" filepath="$PROJECT_DIR$/../MorseCodeKitSdk_Android/MorseCodeKitSdk_Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MorseCodeAppModule_Android/MorseCodeSdk_Android.iml" filepath="$PROJECT_DIR$/../MorseCodeAppModule_Android/MorseCodeSdk_Android.iml" />
     </modules>
   </component>
 </project>

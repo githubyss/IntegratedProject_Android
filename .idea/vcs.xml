@@ -5,7 +5,6 @@
     <mapping directory="$PROJECT_DIR$/../CommonNetworkSdk_Android" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../CommonResSdk_Android" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../CommonUiSdk_Android" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../EpaKits_android" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../ExperimentAppModule_Android" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../IntegratedAppModule_Android" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
