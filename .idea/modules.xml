@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../CommonKitSdk_Android/CommonKitSdk_Android.iml" filepath="$PROJECT_DIR$/../CommonKitSdk_Android/CommonKitSdk_Android.iml" group="IntegratedProject_Android/CommonKitSdk_Android" />
+      <module fileurl="file://$PROJECT_DIR$/../CommonNetworkSdk_Android/CommonNetworkSdk_Android.iml" filepath="$PROJECT_DIR$/../CommonNetworkSdk_Android/CommonNetworkSdk_Android.iml" group="IntegratedProject_Android/CommonNetworkSdk_Android" />
+      <module fileurl="file://$PROJECT_DIR$/../CommonResSdk_Android/CommonResSdk_Android.iml" filepath="$PROJECT_DIR$/../CommonResSdk_Android/CommonResSdk_Android.iml" group="IntegratedProject_Android/CommonResSdk_Android" />
+      <module fileurl="file://$PROJECT_DIR$/../CommonUiSdk_Android/CommonUiSdk_Android.iml" filepath="$PROJECT_DIR$/../CommonUiSdk_Android/CommonUiSdk_Android.iml" group="IntegratedProject_Android/CommonUiSdk_Android" />
+      <module fileurl="file://$PROJECT_DIR$/../ExperimentAppModule_Android/ExperimentAppModule_Android.iml" filepath="$PROJECT_DIR$/../ExperimentAppModule_Android/ExperimentAppModule_Android.iml" group="IntegratedProject_Android/ExperimentAppModule_Android" />
+      <module fileurl="file://$PROJECT_DIR$/../IntegratedAppModule_Android/IntegratedAppModule_Android.iml" filepath="$PROJECT_DIR$/../IntegratedAppModule_Android/IntegratedAppModule_Android.iml" group="IntegratedProject_Android/IntegratedAppModule_Android" />
       <module fileurl="file://$PROJECT_DIR$/IntegratedProject_Android.iml" filepath="$PROJECT_DIR$/IntegratedProject_Android.iml" group="IntegratedProject_Android" />
-      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" group="IntegratedProject_Android/app" />
+      <module fileurl="file://$PROJECT_DIR$/../MorseCodeAppModule_Android/MorseCodeAppModule_Android.iml" filepath="$PROJECT_DIR$/../MorseCodeAppModule_Android/MorseCodeAppModule_Android.iml" group="IntegratedProject_Android/MorseCodeAppModule_Android" />
+      <module fileurl="file://$PROJECT_DIR$/../MorseCodeKitSdk_Android/MorseCodeKitSdk_Android.iml" filepath="$PROJECT_DIR$/../MorseCodeKitSdk_Android/MorseCodeKitSdk_Android.iml" group="IntegratedProject_Android/MorseCodeKitSdk_Android" />
     </modules>
   </component>
 </project>

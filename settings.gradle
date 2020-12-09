@@ -1,4 +1,28 @@
 // rootProject.name='IntegratedProject_Android'
 
-include ':app'
-project(':app').projectDir = new File(settingsDir, '../app')
+// include ':app'
+// project(':app').projectDir = new File(settingsDir, '../app')
+
+include ':IntegratedAppModule_Android'
+project(':IntegratedAppModule_Android').projectDir = new File(settingsDir, '../IntegratedAppModule_Android')
+
+include ':MorseCodeAppModule_Android'
+project(':MorseCodeAppModule_Android').projectDir = new File(settingsDir, '../MorseCodeAppModule_Android')
+
+include ':MorseCodeKitSdk_Android'
+project(':MorseCodeKitSdk_Android').projectDir = new File(settingsDir, '../MorseCodeKitSdk_Android')
+
+include ':ExperimentAppModule_Android'
+project(':ExperimentAppModule_Android').projectDir = new File(settingsDir, '../ExperimentAppModule_Android')
+
+include ':CommonKitSdk_Android'
+project(':CommonKitSdk_Android').projectDir = new File(settingsDir, '../CommonKitSdk_Android')
+
+include ':CommonUiSdk_Android'
+project(':CommonUiSdk_Android').projectDir = new File(settingsDir, '../CommonUiSdk_Android')
+
+include ':CommonResSdk_Android'
+project(':CommonResSdk_Android').projectDir = new File(settingsDir, '../CommonResSdk_Android')
+
+include ':CommonNetworkSdk_Android'
+project(':CommonNetworkSdk_Android').projectDir = new File(settingsDir, '../CommonNetworkSdk_Android')
