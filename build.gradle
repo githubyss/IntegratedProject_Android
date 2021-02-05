@@ -42,8 +42,8 @@ buildscript {
     ext.joda_time_version = '2.10.9'
 
     /* Glide */
-    ext.glide_api_version = '4.7.1'
-    ext.glide_compile_version = '4.7.1'
+    ext.glide_api_version = '4.12.0'
+    ext.glide_compile_version = '4.12.0'
 
     /* Volley */
     ext.volley_version = '1.0.19'
