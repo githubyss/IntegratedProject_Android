@@ -38,6 +38,9 @@ buildscript {
     ext.arouter_annotation_version = '1.0.4'
     ext.arouter_register_version = '1.0.2'
 
+    /* Eventbus */
+    ext.eventbus_version = '3.1.1'
+
     /* Joda Time */
     ext.joda_time_version = '2.10.9'
 
