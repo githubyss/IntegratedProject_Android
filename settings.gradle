@@ -6,8 +6,8 @@
 // include ':IntegratedAppModule_Android'
 // project(':IntegratedAppModule_Android').projectDir = new File(settingsDir, '../IntegratedAppModule_Android')
 
-include ':ExperimentAppModule_Android'
-project(':ExperimentAppModule_Android').projectDir = new File(settingsDir, '../ExperimentAppModule_Android')
+// include ':ExperimentAppModule_Android'
+// project(':ExperimentAppModule_Android').projectDir = new File(settingsDir, '../ExperimentAppModule_Android')
 
 include ':AccessibilityAutomaticAppModule_Android'
 project(':AccessibilityAutomaticAppModule_Android').projectDir = new File(settingsDir, '../AccessibilityAutomaticAppModule_Android')
