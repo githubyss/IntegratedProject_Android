@@ -15,8 +15,8 @@ project(':CommonNetSdk_Android').projectDir = new File(settingsDir, '../CommonNe
 include ':AccessibilityAutomaticAppModule_Android'
 project(':AccessibilityAutomaticAppModule_Android').projectDir = new File(settingsDir, '../AccessibilityAutomaticAppModule_Android')
 
-include ':MorseCodeAppModule_Android'
-project(':MorseCodeAppModule_Android').projectDir = new File(settingsDir, '../MorseCodeAppModule_Android')
-
-include ':MorseCodeKitSdk_Android'
-project(':MorseCodeKitSdk_Android').projectDir = new File(settingsDir, '../MorseCodeKitSdk_Android')
+// include ':MorseCodeAppModule_Android'
+// project(':MorseCodeAppModule_Android').projectDir = new File(settingsDir, '../MorseCodeAppModule_Android')
+//
+// include ':MorseCodeKitSdk_Android'
+// project(':MorseCodeKitSdk_Android').projectDir = new File(settingsDir, '../MorseCodeKitSdk_Android')
