@@ -1,5 +1,10 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
+// Global gradle variable definition
+ext {
+    // gradleAuto = false
+}
+
 buildscript {
     repositories {
         google()
@@ -11,72 +16,12 @@ buildscript {
         classpath "com.android.tools.build:gradle:$gradle_version"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         // classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
-        classpath "com.neenbedankt.gradle.plugins:android-apt:1.8"
+        classpath "com.neenbedankt.gradle.plugins:android-apt:$android_apt_version"
         classpath "com.alibaba:arouter-register:$arouter_register_version"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
-
-    // /* Gradle */
-    // ext.gradle_version = '3.6.3'
-    //
-    // /* Build Tools */
-    // ext.build_tools_version = '29.0.3'
-    //
-    // /* Sdk */
-    // ext.compile_sdk_version = 29
-    // ext.min_sdk_version = 21
-    // ext.target_sdk_version = 29
-    //
-    // /* Kotlin */
-    // ext.kotlin_version = '1.4.20'
-    //
-    // /* Android Support */
-    // // ext.android_support_v_7_version = '27.1.1'
-    // // ext.android_support_material_design_version = '27.1.1'
-    //
-    // /* Androidx Compatibility */
-    // ext.androidx_appcompat_version = '1.2.0'
-    // ext.androidx_core_ktx_version = '1.3.2'
-    // ext.androidx_localbroadcastmanager_version = '1.0.0'
-    // ext.androidx_recyclerview_version = '1.1.0'
-    // ext.androidx_constraintlayout_version = '2.0.4'
-    //
-    // /* Material Design Support */
-    // ext.material_design_version = '1.2.1'
-    //
-    // /* Flexbox */
-    // ext.flexbox_version = '0.3.0-alpha3'
-    //
-    // /* ARouter */
-    // ext.arouter_api_version = '1.3.1'
-    // ext.arouter_compile_version = '1.1.4'
-    // ext.arouter_annotation_version = '1.0.4'
-    // ext.arouter_register_version = '1.0.2'
-    //
-    // /* Eventbus */
-    // // ext.eventbus_version = '3.1.1'
-    //
-    // /* Joda Time */
-    // ext.joda_time_version = '2.10.9'
-    //
-    // /* Glide */
-    // ext.glide_api_version = '4.12.0'
-    // ext.glide_compile_version = '4.12.0'
-    //
-    // /* Volley */
-    // ext.volley_version = '1.0.19'
-    //
-    // /* Http */
-    // ext.httpcore_version = '4.4.9'
-    // ext.httpmime_version = '4.5.5'
-    //
-    // /* Test */
-    // ext.junit_version = '4.12'
-    // ext.androidx_test_runner_version = '1.1.2'
-    // ext.androidx_test_junit_version = '1.1.2'
-    // ext.androidx_test_espresso_core_version = '3.3.0'
 }
 
 allprojects {
@@ -89,9 +34,4 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
-}
-
-// Global gradle variable definition
-ext {
-    // gradleAuto = false
 }
