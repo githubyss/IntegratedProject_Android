@@ -1,22 +1,74 @@
 // rootProject.name='IntegratedProject_Android'
 
+Properties properties = new Properties()
+File propertyFile = new File("${rootDir.getAbsolutePath()}/gradle.properties")
+InputStream inputStream = propertyFile.newDataInputStream()
+properties.load(inputStream)
+def launchApp = properties.getProperty('launchApp')
+def buildAll = properties.getProperty('buildAll')
+
+println "settings: ${settings}"
+println "settingsDir: ${settingsDir}"
+println "rootDir: ${rootDir}"
+println "rootProject: ${rootProject}"
+println "launchApp: ${launchApp}"
+
 include ':CommonLibSdk_Android'
 project(':CommonLibSdk_Android').projectDir = new File(settingsDir, '../CommonLibSdk_Android')
 
-include ':CommonKitSdk_Android'
-project(':CommonKitSdk_Android').projectDir = new File(settingsDir, '../CommonKitSdk_Android')
+if (buildAll) {
+    include ':CommonKitSdk_Android'
+    project(':CommonKitSdk_Android').projectDir = new File(settingsDir, '../CommonKitSdk_Android')
+    include ':CommonUiSdk_Android'
+    project(':CommonUiSdk_Android').projectDir = new File(settingsDir, '../CommonUiSdk_Android')
+    include ':CommonNetSdk_Android'
+    project(':CommonNetSdk_Android').projectDir = new File(settingsDir, '../CommonNetSdk_Android')
+    include ':AccessibilityAutomaticAppModule_Android'
+    project(':AccessibilityAutomaticAppModule_Android').projectDir = new File(settingsDir, '../AccessibilityAutomaticAppModule_Android')
+    include ':MorseCodeAppModule_Android'
+    project(':MorseCodeAppModule_Android').projectDir = new File(settingsDir, '../MorseCodeAppModule_Android')
+    include ':MorseCodeKitSdk_Android'
+    project(':MorseCodeKitSdk_Android').projectDir = new File(settingsDir, '../MorseCodeKitSdk_Android')
+}
 
-include ':CommonUiSdk_Android'
-project(':CommonUiSdk_Android').projectDir = new File(settingsDir, '../CommonUiSdk_Android')
+if (launchApp == "CommonKitSdk_Android") {
+    include ':CommonKitSdk_Android'
+    project(':CommonKitSdk_Android').projectDir = new File(settingsDir, '../CommonKitSdk_Android')
+}
 
-include ':CommonNetSdk_Android'
-project(':CommonNetSdk_Android').projectDir = new File(settingsDir, '../CommonNetSdk_Android')
+if (launchApp == "CommonUiSdk_Android") {
+    include ':CommonUiSdk_Android'
+    project(':CommonUiSdk_Android').projectDir = new File(settingsDir, '../CommonUiSdk_Android')
+    include ':CommonNetSdk_Android'
+    project(':CommonNetSdk_Android').projectDir = new File(settingsDir, '../CommonNetSdk_Android')
+    include ':CommonKitSdk_Android'
+    project(':CommonKitSdk_Android').projectDir = new File(settingsDir, '../CommonKitSdk_Android')
+}
 
-include ':AccessibilityAutomaticAppModule_Android'
-project(':AccessibilityAutomaticAppModule_Android').projectDir = new File(settingsDir, '../AccessibilityAutomaticAppModule_Android')
+if (launchApp == "CommonNetSdk_Android") {
+    include ':CommonNetSdk_Android'
+    project(':CommonNetSdk_Android').projectDir = new File(settingsDir, '../CommonNetSdk_Android')
+    include ':CommonKitSdk_Android'
+    project(':CommonKitSdk_Android').projectDir = new File(settingsDir, '../CommonKitSdk_Android')
+}
 
-include ':MorseCodeAppModule_Android'
-project(':MorseCodeAppModule_Android').projectDir = new File(settingsDir, '../MorseCodeAppModule_Android')
 
-include ':MorseCodeKitSdk_Android'
-project(':MorseCodeKitSdk_Android').projectDir = new File(settingsDir, '../MorseCodeKitSdk_Android')
+if (launchApp == "AccessibilityAutomaticAppModule_Android") {
+    include ':AccessibilityAutomaticAppModule_Android'
+    project(':AccessibilityAutomaticAppModule_Android').projectDir = new File(settingsDir, '../AccessibilityAutomaticAppModule_Android')
+    include ':CommonUiSdk_Android'
+    project(':CommonUiSdk_Android').projectDir = new File(settingsDir, '../CommonUiSdk_Android')
+    include ':CommonKitSdk_Android'
+    project(':CommonKitSdk_Android').projectDir = new File(settingsDir, '../CommonKitSdk_Android')
+}
+
+if (launchApp == "MorseCodeAppModule_Android") {
+    include ':MorseCodeAppModule_Android'
+    project(':MorseCodeAppModule_Android').projectDir = new File(settingsDir, '../MorseCodeAppModule_Android')
+    include ':MorseCodeKitSdk_Android'
+    project(':MorseCodeKitSdk_Android').projectDir = new File(settingsDir, '../MorseCodeKitSdk_Android')
+    include ':CommonUiSdk_Android'
+    project(':CommonUiSdk_Android').projectDir = new File(settingsDir, '../CommonUiSdk_Android')
+    include ':CommonKitSdk_Android'
+    project(':CommonKitSdk_Android').projectDir = new File(settingsDir, '../CommonKitSdk_Android')
+}
