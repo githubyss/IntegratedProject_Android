@@ -25,6 +25,8 @@ if (buildAll) {
     project(':CommonUiSdk_Android').projectDir = new File(settingsDir, '../CommonUiSdk_Android')
     include ':CommonNetSdk_Android'
     project(':CommonNetSdk_Android').projectDir = new File(settingsDir, '../CommonNetSdk_Android')
+    include ':SampleListAppModule_Android'
+    project(':SampleListAppModule_Android').projectDir = new File(settingsDir, '../SampleListAppModule_Android')
     include ':AccessibilityAutomaticAppModule_Android'
     project(':AccessibilityAutomaticAppModule_Android').projectDir = new File(settingsDir, '../AccessibilityAutomaticAppModule_Android')
     include ':MorseCodeAppModule_Android'
@@ -52,6 +54,17 @@ if (launchApp == "CommonNetSdk_Android") {
     project(':CommonNetSdk_Android').projectDir = new File(settingsDir, '../CommonNetSdk_Android')
     include ':CommonKitSdk_Android'
     project(':CommonKitSdk_Android').projectDir = new File(settingsDir, '../CommonKitSdk_Android')
+}
+
+if (launchApp == "SampleListAppModule_Android") {
+    include ':SampleListAppModule_Android'
+    project(':SampleListAppModule_Android').projectDir = new File(settingsDir, '../SampleListAppModule_Android')
+    include ':CommonKitSdk_Android'
+    project(':CommonKitSdk_Android').projectDir = new File(settingsDir, '../CommonKitSdk_Android')
+    include ':CommonNetSdk_Android'
+    project(':CommonNetSdk_Android').projectDir = new File(settingsDir, '../CommonNetSdk_Android')
+    include ':CommonUiSdk_Android'
+    project(':CommonUiSdk_Android').projectDir = new File(settingsDir, '../CommonUiSdk_Android')
 }
 
 if (launchApp == "AccessibilityAutomaticAppModule_Android") {

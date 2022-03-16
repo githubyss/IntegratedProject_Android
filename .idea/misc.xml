@@ -21,7 +21,7 @@
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/AccessibilityAutomaticAppModule_Android/src/main/res/suning_ebuy_rush_buy/layout/fragment_suning_ebuy_rush_buy_setting.xml" value="0.1" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/AccessibilityAutomaticAppModule_Android/src/main/res/taobao_rush_buy/layout/fragment_taobao_rush_buy_setting.xml" value="0.1" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/AccessibilityAutomaticAppModule_Android/src/main/res/wechat_lucky_money/layout/fragment_wechat_lucky_money_setting.xml" value="0.15885416666666666" />
-        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/AccessibilityAutomaticAppModule_Android/src/wechatLuckyMoney/res/layout/fragment_wechat_lucky_money_setting.xml" value="0.234375" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/AccessibilityAutomaticAppModule_Android/src/wechatLuckyMoney/res/layout/fragment_wechat_lucky_money_setting.xml" value="0.17592592592592593" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/alone/res/homepage/layout/comkit_fragment_homepage.xml" value="0.23489583333333333" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/app/res/homepage/layout/comkit_fragment_homepage.xml" value="0.2578558225508318" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/app/res/json_utils/layout/comkit_fragment_json_utils.xml" value="0.19010416666666666" />
@@ -123,6 +123,7 @@
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/app/res/recycler_view/search/layout/comui_list_item_fund_manager.xml" value="0.1390625" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/app/res/recycler_view/search/layout/comui_list_item_fund_product.xml" value="0.1390625" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/app/res/recycler_view/search/layout/comui_list_item_gold_product.xml" value="0.1390625" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/app/res/recycler_view/search/layout/comui_list_item_see_more.xml" value="0.228125" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/app/res/recycler_view/search/layout/comui_list_item_special_topic.xml" value="0.1390625" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/app/res/recycler_view/three_layer/layout/comui_fragment_three_layer_recycler_view.xml" value="0.12135416666666667" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/app/res/time_countdown/layout/comui_fragment_time_countdown.xml" value="0.1203125" />
