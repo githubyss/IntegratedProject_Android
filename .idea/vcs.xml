@@ -7,6 +7,7 @@
     <mapping directory="$PROJECT_DIR$/../CommonNetSdk_Android" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../CommonResSdk_Android" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../CommonUiSdk_Android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../DesignPatternLibrary_Android" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../MorseCodeAppModule_Android" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../MorseCodeKitSdk_Android" vcs="Git" />

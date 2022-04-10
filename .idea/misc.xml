@@ -23,7 +23,7 @@
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/AccessibilityAutomaticAppModule_Android/src/main/res/wechat_lucky_money/layout/fragment_wechat_lucky_money_setting.xml" value="0.15885416666666666" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/AccessibilityAutomaticAppModule_Android/src/wechatLuckyMoney/res/layout/fragment_wechat_lucky_money_setting.xml" value="0.17592592592592593" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/alone/res/homepage/layout/comkit_fragment_homepage.xml" value="0.23489583333333333" />
-        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/app/res/homepage/layout/comkit_fragment_homepage.xml" value="0.2578558225508318" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/app/res/homepage/layout/comkit_fragment_homepage.xml" value="0.1" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/app/res/json_utils/layout/comkit_fragment_json_utils.xml" value="0.19010416666666666" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/app/res/json_utils/layout/comkit_fragment_mvvm.xml" value="0.1" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/app/res/lifecycle/layout/comkit_fragment_lifecycle.xml" value="0.2234375" />
@@ -46,6 +46,7 @@
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonResSdk_Android/src/main/res/activity/layout/comres_activity_base_toolbar.xml" value="0.1546875" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonResSdk_Android/src/main/res/button/drawable/comres_button_checkbox_bg_rectangle_micro_gray_blue.xml" value="0.1296875" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonResSdk_Android/src/main/res/button/drawable/comres_button_click_bg_rectangle_micro_blue.xml" value="0.29128205128205126" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonResSdk_Android/src/main/res/button/drawable/comres_button_click_bg_rectangle_micro_transparent.xml" value="0.1" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonResSdk_Android/src/main/res/button/drawable/comres_button_click_bg_rectangle_micro_white.xml" value="0.15555555555555556" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonResSdk_Android/src/main/res/button/drawable/comres_button_click_bg_rectangle_normal_blue.xml" value="0.15555555555555556" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonResSdk_Android/src/main/res/button/drawable/comres_button_toggle_bg_rectangle_micro_blue_transparent.xml" value="0.15555555555555556" />
@@ -226,6 +227,7 @@
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/main/res/time_countdown/drawable/comui_time_bg.xml" value="0.2791666666666667" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/main/res/time_countdown/layout/comui_time_countdown.xml" value="0.258974358974359" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/MorseCodeAppModule_Android/src/main/res/layout/mc_fragment_char_pick.xml" value="0.1" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/MorseCodeAppModule_Android/src/main/res/menu/mc_menu_play_mode.xml" value="0.1" />
       </map>
     </option>
   </component>

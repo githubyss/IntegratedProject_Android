@@ -13,6 +13,8 @@ println "rootDir: ${rootDir}"
 println "rootProject: ${rootProject}"
 println "launchApp: ${launchApp}"
 
+include ':DesignPatternLibrary_Android'
+project(':DesignPatternLibrary_Android').projectDir = new File(settingsDir, '../DesignPatternLibrary_Android')
 include ':CommonLibSdk_Android'
 project(':CommonLibSdk_Android').projectDir = new File(settingsDir, '../CommonLibSdk_Android')
 include ':CommonResSdk_Android'
