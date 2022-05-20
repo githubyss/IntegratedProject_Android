@@ -1,0 +1,34 @@
+// ext {
+//     /**
+//      * 组件化配置示例：
+//
+//      1、整编模式
+//      launchApp=xx（主应用 module 名字）
+//      buildAll=true
+//
+//      2、单组件调试
+//      launchApp=xx（单组件 module 名字）
+//      buildAll=false
+//
+//      3、多组件调试
+//      launchApp=xx（主组件 module 名字）
+//      buildAll=false
+//      loadComponents=xx1,xx2（需要联调的业务组件 module 名字）
+//      */
+//     assemble = [
+//             shellApp: '', // 打包容器 App module 名字
+//             launchApp: 'SampleKotlinLibrary_Android',
+//             // launchApp: DesignPatternLibrary_Android,
+//             // launchApp: CommonKitSdk_Android,
+//             // launchApp: CommonUiSdk_Android,
+//             // launchApp: CommonNetSdk_Android,
+//             // launchApp: SampleListSdk_Android,
+//             // launchApp: AccessibilityAutomaticAppModule_Android,
+//             // launchApp: MorseCodeAppModule_Android,
+//             // launchApp: MorseCodeKitSdk_Android,
+//             // launchApp: '', // 被启动的组件的名字，打包发布时一定为外壳 App
+//             buildAll: true, // 是否整编 App：true 壳 App 打包会依赖 allComponents；false 打包会依赖 loadComponents
+//             allComponents: '', // 所有业务组件 App 的 module 名字
+//             loadComponents: '', // 多业务组件放入 shellApp 联合调试启用的 module 名字
+//     ]
+// }

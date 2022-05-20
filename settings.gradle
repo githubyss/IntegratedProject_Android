@@ -13,6 +13,8 @@ println "rootDir: ${rootDir}"
 println "rootProject: ${rootProject}"
 println "launchApp: ${launchApp}"
 
+include ':SampleKotlinLibrary_Android'
+project(':SampleKotlinLibrary_Android').projectDir = new File(settingsDir, '../SampleKotlinLibrary_Android')
 include ':DesignPatternLibrary_Android'
 project(':DesignPatternLibrary_Android').projectDir = new File(settingsDir, '../DesignPatternLibrary_Android')
 include ':CommonLibSdk_Android'

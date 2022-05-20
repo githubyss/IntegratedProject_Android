@@ -1,0 +1,11 @@
+ext {
+    feature = [
+            isDebuggable: true, // 是否可以调试（对应 BuildConfig.DEBUG）
+            isMinifyEnabled: false, // 是否开启混淆
+            isShrinkResources: false, // 是否清理无用资源
+            isZipAlignEnabled: false, // 是否启用 ZipAlign 压缩
+            isViewBindingEnabled: true, // 是否启用 ViewBinding
+            isDataBindingEnabled: true, // 是否启用 DataBinding
+            isComposeEnabled: true, // 是否启用 Compose
+    ]
+}

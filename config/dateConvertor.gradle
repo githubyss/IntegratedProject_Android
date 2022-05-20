@@ -1,0 +1,17 @@
+def date2VersionCode() {
+    def date = new Date()
+
+    // date.year is time from 1900
+    // 20210101 is the first version
+    // 20210101 = 12*31*121 + 31*0 + 1 = 45013
+    def code = 12 * 31 * date.year + 31 * date.month + date.date - 45013 + 1
+
+    // so time error less than 2021
+    if (code < 0) {
+        throw new GradleException("Please sync time for versionCode, now: " + date.toLocaleString())
+    }
+
+    println("> Task :app version code is " + code)
+
+    return code;
+}

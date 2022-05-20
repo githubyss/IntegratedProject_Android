@@ -1,0 +1,132 @@
+ext {
+    languageVersion = [
+            javaVersion: '1.8',
+    ]
+
+    androidVersion = [
+            buildToolsVersion: '31.0.0', // 用于 Gradle 编译项目的工具版本
+            compileSdkVersion: 31, // 用于编译的 SDK 版本
+            minSdkVersion: 21, // 最低支持 Android 版本
+            targetSdkVersion: 31, // 不能增大到 28 及以上，会禁用 http 访问
+
+            minifyEnabled: false, // 设置是否使用混淆
+    ]
+
+    dependenciesVersion = [
+            // 工程依赖
+            gradle_version: '7.0.2',
+            android_apt_version: '1.8',
+
+            // 模块依赖
+            // Kotlin
+            kotlin_version: '1.5.31', // 工程模块共有依赖
+            kotlinx_coroutines_version: '1.5.2',
+
+            // Android Support
+            androidSupportV7Version: '27.1.1',
+            androidSupportMaterialDesignVersion: '27.1.1',
+
+            // Androidx Compatibility
+            androidxAppcompatVersion: '1.3.1',
+
+            // Androidx KTX
+            androidxCoreKtxVersion: '1.6.0',
+            androidxFragmentKtxVersion: '1.3.2',
+            androidxCollectionKtxVersion: '1.1.0',
+
+            // Androidx Sys
+            androidxLocalbroadcastmanagerVersion: '1.0.0',
+
+            // Androidx UI
+            androidxRecyclerviewVersion: '1.2.0',
+            androidxConstraintlayoutVersion: '2.0.4',
+
+            // Androidx Compose
+            androidxComposeVersion: '1.0.5',
+            androidxComposeActivityVersion: '1.3.1',
+            androidxComposeLifecycleVersion: '1.0.0-alpha07',
+
+            // Androidx Lifecycle
+            androidxLifecycleVersion: '2.3.1',
+            androidxLifecycleExtensionsVersion: '2.2.0',
+
+            // Material Design Support
+            materialDesignVersion: '1.4.0',
+
+            // Flexbox
+            //flexboxVersion:'0.3.0-alpha3',
+            flexboxVersion: '1.0.0',
+
+            // Gson
+            gsonVersion: '2.8.6',
+
+            // Eventbus
+            eventbusVersion: '3.1.1',
+
+            // RxAndroid
+            rxandroidVersion: '1.0.0',
+            rxandroid3Version: '3.0.0',
+
+            // Joda Time
+            jodaTimeVersion: '2.10.9',
+
+            // Wechat
+            wechatVersion: '6.8.0',
+
+            // Volley
+            volleyVersion: '1.0.19',
+
+            // Http
+            httpcoreVersion: '4.4.10',
+            httpmimeVersion: '4.5.6',
+
+            // Retrofit2
+            retrofit2Version: '2.8.1',
+            retrofit2ConverterMoshiVersion: '2.6.2',
+
+            // Glide
+            glideApiVersion: '4.12.0',
+            glideCompileVersion: '4.12.0',
+
+            // Coil
+            coilVersion: '1.4.0',
+
+            // ARouter
+            arouterApiVersion: '1.3.1',
+            arouterAnnotationVersion: '1.0.4',
+            arouterCompileVersion: '1.1.4',
+            arouterRegisterVersion: '1.0.2', // 工程模块共有依赖
+
+            // Test
+            junitVersion: '4.13.1',
+            androidxTestRunnerVersion: '1.1.2',
+            androidxTestJunitVersion: '1.1.2',
+            androidxTestEspressoCoreVersion: '3.3.0',
+            androidxTestComposeVersion: '1.0.5',
+
+            // appcompat: "1.1.0",
+            // recyclerview: "1.1.0",
+            // junit: "4.12",
+            // constraintlayout: "1.1.3",
+            // runner: "1.0.2",
+            // espresso_core: "3.2.0",
+            // okhttp3: "3.8.1",
+            // okio: "1.13.0",
+            // okgo: "3.0.4",
+            // retrofit2: "2.4.0",
+            // gson: "2.8.6",
+            // immersionbar: "3.0.0",
+            // mpandroidchart: "v3.1.0",
+            // annotation: "1.1.0",
+            // zxing: "3.3.0",
+            // butterknife: "10.2.1",
+            // glide: "4.11.0",
+            // greendao: "3.2.2",
+            // arouterapi: '1.5.0',
+            // aroutercompiler: '1.2.2',
+            // room_runtime: '2.2.5',
+            // room_compiler: '2.2.5',
+            // kotlin: '1.4.1',
+            // koin: '3.1.2',
+    ]
+}

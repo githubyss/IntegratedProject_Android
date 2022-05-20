@@ -1,0 +1,36 @@
+apply from: "${rootDir}/config/versionConfigs.gradle"
+
+android {
+    compileOptions {
+        sourceCompatibility languageVersion.javaVersion
+        targetCompatibility languageVersion.javaVersion
+    }
+
+    kotlinOptions {
+        jvmTarget = 1.8
+        useIR = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion dependenciesVersion.androidxComposeVersion
+        kotlinCompilerVersion dependenciesVersion.kotlinVersion
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/metadata.kotlin_module'
+        exclude 'META-INF/metadata.jvm.kotlin_module'
+    }
+
+    // androidExtensions {
+    //     experimental = true
+    // }
+
+    // lintOptions {
+    //     abortOnError false
+    // }
+}
