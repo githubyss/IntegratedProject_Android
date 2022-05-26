@@ -9,6 +9,7 @@ buildscript {
     // ext 必须在 buildscript 块内，所以含 ext 的 gradle 的导入也要放在这里
     apply from: "${rootDir}/config/versionConfigs.gradle"
     // apply from: "config/versionConfigs.gradle" // 效果同上
+    apply from: "${rootDir}/config/libConfigs.gradle"
 
     repositories {
         google()
@@ -17,11 +18,11 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:$dependenciesVersion.gradle_version"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$dependenciesVersion.kotlin_version"
-        // classpath "org.jetbrains.kotlin:kotlin-android-extensions:$dependenciesVersion.kotlin_version"
-        classpath "com.neenbedankt.gradle.plugins:android-apt:$dependenciesVersion.android_apt_version"
-        classpath "com.alibaba:arouter-register:$dependenciesVersion.arouterRegisterVersion"
+        classpath dependenciesLib.android_tools_build_gradle
+        classpath dependenciesLib.kotlin_gradle_plugin
+        // classpath dependenciesLib.kotlin_android_extensions
+        classpath dependenciesLib.neenbedankt_gradle_plugins_android_apt
+        classpath dependenciesLib.alibaba_arouter_register
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files

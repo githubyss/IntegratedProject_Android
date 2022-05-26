@@ -9,20 +9,18 @@ def buildAll = properties.getProperty('buildAll')
 
 println "settings: ${settings}"
 println "settingsDir: ${settingsDir}"
-println "rootDir: ${rootDir}"
 println "rootProject: ${rootProject}"
-println "launchApp: ${launchApp}"
+println "rootDir: ${rootDir}"
 
-include ':SampleKotlinLibrary_Android'
-project(':SampleKotlinLibrary_Android').projectDir = new File(settingsDir, '../SampleKotlinLibrary_Android')
-include ':DesignPatternLibrary_Android'
-project(':DesignPatternLibrary_Android').projectDir = new File(settingsDir, '../DesignPatternLibrary_Android')
-include ':CommonLibSdk_Android'
-project(':CommonLibSdk_Android').projectDir = new File(settingsDir, '../CommonLibSdk_Android')
+println "launchApp: ${launchApp}"
+println "buildAll: ${buildAll}"
+
 include ':CommonResSdk_Android'
 project(':CommonResSdk_Android').projectDir = new File(settingsDir, '../CommonResSdk_Android')
+include ':DesignPatternLibrary_Android'
+project(':DesignPatternLibrary_Android').projectDir = new File(settingsDir, '../DesignPatternLibrary_Android')
 
-if (buildAll) {
+if (buildAll.toBoolean()) {
     include ':CommonKitSdk_Android'
     project(':CommonKitSdk_Android').projectDir = new File(settingsDir, '../CommonKitSdk_Android')
     include ':CommonUiSdk_Android'
@@ -58,6 +56,11 @@ if (launchApp == "CommonNetSdk_Android") {
     project(':CommonNetSdk_Android').projectDir = new File(settingsDir, '../CommonNetSdk_Android')
     include ':CommonKitSdk_Android'
     project(':CommonKitSdk_Android').projectDir = new File(settingsDir, '../CommonKitSdk_Android')
+}
+
+if (launchApp == "SampleKotlinLibrary_Android") {
+    include ':SampleKotlinLibrary_Android'
+    project(':SampleKotlinLibrary_Android').projectDir = new File(settingsDir, '../SampleKotlinLibrary_Android')
 }
 
 if (launchApp == "SampleListAppModule_Android") {

@@ -1,98 +1,108 @@
+apply from: "${rootDir}/config/versionConfigs.gradle"
+
 ext {
     dependenciesLib = [
+            /** Classpath */
+            android_tools_build_gradle: "com.android.tools.build:gradle:$dependenciesVersion.gradle_version",
+            kotlin_gradle_plugin: "org.jetbrains.kotlin:kotlin-gradle-plugin:$dependenciesVersion.kotlin_version",
+            // kotlin_android_extensions: "org.jetbrains.kotlin:kotlin-android-extensions:$dependenciesVersion.kotlin_version",
+            neenbedankt_gradle_plugins_android_apt: "com.neenbedankt.gradle.plugins:android-apt:$dependenciesVersion.android_apt_version",
+            alibaba_arouter_register: "com.alibaba:arouter-register:$dependenciesVersion.arouter_register_version",
+
             /** Kotlin */
-            kotlin_stdlib_jdk7: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$dependenciesVersion.kotlinVersion",
-            kotlin_reflect: "org.jetbrains.kotlin:kotlin-reflect:$dependenciesVersion.kotlinVersion",
-            kotlinx_coroutines_core: "org.jetbrains.kotlinx:kotlinx-coroutines-core:$dependenciesVersion.kotlinxCoroutinesVersion",
-            kotlinx_coroutines_android: "org.jetbrains.kotlinx:kotlinx-coroutines-android:$dependenciesVersion.kotlinxCoroutinesVersion",
+            kotlin_stdlib: "org.jetbrains.kotlin:kotlin-stdlib:$dependenciesVersion.kotlin_version", // 配置 dependencies {classpath dependenciesLib.kotlin_gradle_plugin} 后，会自动导包，可以不显示声明依赖。
+            kotlin_stdlib_jdk7: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$dependenciesVersion.kotlin_version", // 同上
+            kotlin_reflect: "org.jetbrains.kotlin:kotlin-reflect:$dependenciesVersion.kotlin_version",
+            kotlinx_coroutines_core: "org.jetbrains.kotlinx:kotlinx-coroutines-core:$dependenciesVersion.kotlinx_coroutines_version",
+            kotlinx_coroutines_android: "org.jetbrains.kotlinx:kotlinx-coroutines-android:$dependenciesVersion.kotlinx_coroutines_version",
 
             /** Androidx Compatibility */
-            androidx_appcompat: "androidx.appcompat:appcompat:$dependenciesVersion.androidxAppcompatVersion",
+            androidx_appcompat: "androidx.appcompat:appcompat:$dependenciesVersion.androidx_appcompat_version",
 
             /** Androidx KTX */
-            androidx_core_ktx: "androidx.core:core-ktx:$dependenciesVersion.androidxCoreKtxVersion",
-            androidx_fragment_ktx: "androidx.fragment:fragment-ktx:$dependenciesVersion.androidxFragmentKtxVersion",
-            androidx_collection_ktx: "androidx.collection:collection-ktx:$dependenciesVersion.androidxCollectionKtxVersion",
+            androidx_core_ktx: "androidx.core:core-ktx:$dependenciesVersion.androidx_core_ktx_version",
+            androidx_fragment_ktx: "androidx.fragment:fragment-ktx:$dependenciesVersion.androidx_fragment_ktx_version",
+            androidx_collection_ktx: "androidx.collection:collection-ktx:$dependenciesVersion.androidx_collection_ktx_version", // 依赖 androidx_fragment_ktx 后，会自动导包，可以不显示声明依赖。
 
             /** Androidx Sys */
-            androidx_localbroadcastmanager: "androidx.localbroadcastmanager:localbroadcastmanager:$dependenciesVersion.androidxLocalbroadcastmanagerVersion",
+            androidx_localbroadcastmanager: "androidx.localbroadcastmanager:localbroadcastmanager:$dependenciesVersion.androidx_localbroadcastmanager_version",
 
             /** Androidx UI */
-            androidx_recyclerview: "androidx.recyclerview:recyclerview:$dependenciesVersion.androidxRecyclerviewVersion",
-            androidx_constraintlayout: "androidx.constraintlayout:constraintlayout:$dependenciesVersion.androidxConstraintlayoutVersion",
+            androidx_constraintlayout: "androidx.constraintlayout:constraintlayout:$dependenciesVersion.androidx_constraintlayout_version",
+            androidx_recyclerview: "androidx.recyclerview:recyclerview:$dependenciesVersion.androidx_recyclerview_version",
 
             /** Androidx Compose Ui */
-            androidx_compose_ui: "androidx.compose.ui:ui:$dependenciesVersion.androidxComposeVersion",
-            androidx_compose_ui_tooling: "androidx.compose.ui:ui-tooling:$dependenciesVersion.androidxComposeVersion",
-            androidx_compose_ui_tooling_data: "androidx.compose.ui:ui-tooling-data:$dependenciesVersion.androidxComposeVersion",
-            androidx_compose_ui_tooling_preview: "androidx.compose.ui:ui-tooling-preview:$dependenciesVersion.androidxComposeVersion",
+            androidx_compose_ui: "androidx.compose.ui:ui:$dependenciesVersion.androidx_compose_version", // 依赖 androidx_compose_material 后，会自动导包，可以不显示声明依赖。
+            androidx_compose_ui_tooling: "androidx.compose.ui:ui-tooling:$dependenciesVersion.androidx_compose_version",
+            androidx_compose_ui_tooling_data: "androidx.compose.ui:ui-tooling-data:$dependenciesVersion.androidx_compose_version", // 依赖 androidx_compose_ui_tooling 后，会自动导包，可以不显示声明依赖。
+            androidx_compose_ui_tooling_preview: "androidx.compose.ui:ui-tooling-preview:$dependenciesVersion.androidx_compose_version", // 依赖 androidx_compose_ui_tooling 后，会自动导包，可以不显示声明依赖。
 
-            androidx_compose_material: "androidx.compose.material:material:$dependenciesVersion.androidxComposeVersion",
-            androidx_compose_animation: "androidx.compose.animation:animation:$dependenciesVersion.androidxComposeVersion",
-            androidx_compose_foundation: "androidx.compose.foundation:foundation:$dependenciesVersion.androidxComposeVersion",
+            androidx_compose_material: "androidx.compose.material:material:$dependenciesVersion.androidx_compose_version",
+            androidx_compose_animation: "androidx.compose.animation:animation:$dependenciesVersion.androidx_compose_version", // 依赖 androidx_compose_material 后，会自动导包，可以不显示声明依赖。
+            androidx_compose_foundation: "androidx.compose.foundation:foundation:$dependenciesVersion.androidx_compose_version", // 依赖 androidx_compose_material 后，会自动导包，可以不显示声明依赖。
 
             /** Androidx Compose Integration with activities */
-            androidx_compose_activity: "androidx.activity:activity-compose:$dependenciesVersion.androidxComposeActivityVersion",
+            androidx_activity_compose: "androidx.activity:activity-compose:$dependenciesVersion.androidx_activity_compose_version",
 
             /** Androidx Compose Integration with ViewModels */
-            androidx_compose_lifecycle_viewmodel: "androidx.lifecycle:lifecycle-viewmodel-compose:$dependenciesVersion.androidxComposeLifecycleVersion",
+            androidx_lifecycle_viewmodel_compose: "androidx.lifecycle:lifecycle-viewmodel-compose:$dependenciesVersion.androidx_compose_lifecycle_version",
 
             /** Androidx Lifecycle */
-            androidx_lifecycle_runtime_ktx: "androidx.lifecycle:lifecycle-runtime-ktx:$dependenciesVersion.androidxLifecycleVersion",
-            androidx_lifecycle_viewmodel_ktx: "androidx.lifecycle:lifecycle-viewmodel-ktx:$dependenciesVersion.androidxLifecycleVersion",
-            androidx_lifecycle_livedata_ktx: "androidx.lifecycle:lifecycle-livedata-ktx:$dependenciesVersion.androidxLifecycleVersion",
-            androidx_lifecycle_extensions: "androidx.lifecycle:lifecycle-extensions:$dependenciesVersion.androidxLifecycleExtensionsVersion",
+            androidx_lifecycle_runtime_ktx: "androidx.lifecycle:lifecycle-runtime-ktx:$dependenciesVersion.androidx_lifecycle_version",
+            androidx_lifecycle_viewmodel_ktx: "androidx.lifecycle:lifecycle-viewmodel-ktx:$dependenciesVersion.androidx_lifecycle_version",
+            androidx_lifecycle_livedata_ktx: "androidx.lifecycle:lifecycle-livedata-ktx:$dependenciesVersion.androidx_lifecycle_version",
+            androidx_lifecycle_extensions: "androidx.lifecycle:lifecycle-extensions:$dependenciesVersion.androidx_lifecycle_extensions_version",
             // android_arch_lifecycle_extensions :"android.arch.lifecycle:extensions:1.1.1"
 
             /** Material Design Support */
-            google_material: "com.google.android.material:material:$dependenciesVersion.materialDesignVersion",
+            google_material: "com.google.android.material:material:$dependenciesVersion.material_design_version",
 
             /** Flexbox */
-            google_flexbox: "com.google.android:flexbox:$dependenciesVersion.flexboxVersion",
+            google_flexbox: "com.google.android:flexbox:$dependenciesVersion.flexbox_version",
 
             /** Gson */
-            google_gson: "com.google.code.gson:gson:$dependenciesVersion.gsonVersion",
+            google_gson: "com.google.code.gson:gson:$dependenciesVersion.gson_version",
 
             /** Eventbus */
-            greenrobot_eventbus: "org.greenrobot:eventbus:$dependenciesVersion.eventbusVersion",
+            greenrobot_eventbus: "org.greenrobot:eventbus:$dependenciesVersion.eventbus_version",
 
             /** RxAndroid */
-            // reactivex_rxandroid :"io.reactivex:rxandroid:$dependenciesVersion.rxandroidVersion",
-            reactivex_rxjava3_rxandroid: "io.reactivex.rxjava3:rxandroid:$dependenciesVersion.rxandroid3Version",
+            // reactivex_rxandroid :"io.reactivex:rxandroid:$dependenciesVersion.rxandroid_version",
+            reactivex_rxjava3_rxandroid: "io.reactivex.rxjava3:rxandroid:$dependenciesVersion.rxandroid3_version",
 
             /** Joda Time */
-            joda_time: "joda-time:joda-time:$dependenciesVersion.jodaTimeVersion",
+            joda_time: "joda-time:joda-time:$dependenciesVersion.joda_time_version",
 
             /** Wechat */
-            tencent_wechat_sdk_android: "com.tencent.mm.opensdk:wechat-sdk-android:$dependenciesVersion.wechatVersion",
+            tencent_wechat_sdk_android: "com.tencent.mm.opensdk:wechat-sdk-android:$dependenciesVersion.wechat_version",
 
             /** Http */
-            apache_httpcore: "org.apache.httpcomponents:httpcore:$dependenciesVersion.httpcoreVersion",
-            apache_httpmime: "org.apache.httpcomponents:httpmime:$dependenciesVersion.httpmimeVersion",
+            apache_httpcore: "org.apache.httpcomponents:httpcore:$dependenciesVersion.httpcore_version",
+            apache_httpmime: "org.apache.httpcomponents:httpmime:$dependenciesVersion.httpmime_version",
 
             /** Volley */
-            mcxiaoke_volley: "com.mcxiaoke.volley:library:$dependenciesVersion.volleyVersion",
+            mcxiaoke_volley: "com.mcxiaoke.volley:library:$dependenciesVersion.volley_version",
 
             /** Retrofit2 */
-            squareup_retrofit2: "com.squareup.retrofit2:retrofit:$dependenciesVersion.retrofit2Version",
-            squareup_retrofit2_converter_moshi: "com.squareup.retrofit2:converter-moshi:$dependenciesVersion.retrofit2ConverterMoshiVersion",
+            squareup_retrofit2: "com.squareup.retrofit2:retrofit:$dependenciesVersion.retrofit2_version",
+            squareup_retrofit2_converter_moshi: "com.squareup.retrofit2:converter-moshi:$dependenciesVersion.retrofit2_converter_moshi_version",
 
             /** Glide */
-            bumptech_glide: "com.github.bumptech.glide:glide:$dependenciesVersion.glideApiVersion",
-            bumptech_glide_compiler: "com.github.bumptech.glide:compiler:$dependenciesVersion.glideCompileVersion",
+            bumptech_glide: "com.github.bumptech.glide:glide:$dependenciesVersion.glide_api_version",
+            bumptech_glide_compiler: "com.github.bumptech.glide:compiler:$dependenciesVersion.glide_compile_version",
 
             /** Coil */
-            coil: "io.coil-kt:coil:$dependenciesVersion.coilVersion",
+            coil: "io.coil-kt:coil:$dependenciesVersion.coil_version",
 
             /** ARouter */
-            alibaba_arouter_api: "com.alibaba:arouter-api:$dependenciesVersion.arouterApiVersion",
-            alibaba_arouter_compiler: "com.alibaba:arouter-compiler:$dependenciesVersion.arouterCompileVersion",
+            alibaba_arouter_api: "com.alibaba:arouter-api:$dependenciesVersion.arouter_api_version",
+            alibaba_arouter_compiler: "com.alibaba:arouter-compiler:$dependenciesVersion.arouter_compile_version",
 
             /** Test */
-            junit: "junit:junit:$dependenciesVersion.junitVersion",
-            androidx_test_junit: "androidx.test.ext:junit:$dependenciesVersion.androidxTestJunitVersion",
-            androidx_test_espresso_core: "androidx.test.espresso:espresso-core:$dependenciesVersion.androidxTestEspressoCoreVersion",
-            // androidx_compose_ui_test_junit4: "androidx.compose.ui:ui-test-junit4:$dependenciesVersion.androidxTestComposeVersion",
+            junit: "junit:junit:$dependenciesVersion.junit_version",
+            androidx_test_junit: "androidx.test.ext:junit:$dependenciesVersion.androidx_test_junit_version",
+            androidx_test_espresso_core: "androidx.test.espresso:espresso-core:$dependenciesVersion.androidx_test_espresso_core_version",
+            // androidx_compose_ui_test_junit4: "androidx.compose.ui:ui-test-junit4:$dependenciesVersion.androidx_test_compose_version",
 
 
             // arouterapi: "com.alibaba:arouter-api:${dependenciesVersion.arouterapi}",

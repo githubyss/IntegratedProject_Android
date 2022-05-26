@@ -1,15 +1,13 @@
 ext {
     languageVersion = [
-            javaVersion: '1.8',
+            java_version: '1.8',
     ]
 
     androidVersion = [
-            buildToolsVersion: '31.0.0', // 用于 Gradle 编译项目的工具版本
-            compileSdkVersion: 31, // 用于编译的 SDK 版本
-            minSdkVersion: 21, // 最低支持 Android 版本
-            targetSdkVersion: 31, // 不能增大到 28 及以上，会禁用 http 访问
-
-            minifyEnabled: false, // 设置是否使用混淆
+            build_tools_version: '31.0.0', // 用于 Gradle 编译项目的工具版本
+            compile_sdk_version: 31, // 用于编译的 SDK 版本
+            min_sdk_version: 21, // 最低支持 Android 版本
+            target_sdk_version: 31, // 不能增大到 28 及以上，会禁用 http 访问
     ]
 
     dependenciesVersion = [
@@ -23,86 +21,86 @@ ext {
             kotlinx_coroutines_version: '1.5.2',
 
             // Android Support
-            androidSupportV7Version: '27.1.1',
-            androidSupportMaterialDesignVersion: '27.1.1',
+            android_support_v7_version: '27.1.1',
+            android_support_material_design_version: '27.1.1',
 
             // Androidx Compatibility
-            androidxAppcompatVersion: '1.3.1',
+            androidx_appcompat_version: '1.3.1',
 
             // Androidx KTX
-            androidxCoreKtxVersion: '1.6.0',
-            androidxFragmentKtxVersion: '1.3.2',
-            androidxCollectionKtxVersion: '1.1.0',
+            androidx_core_ktx_version: '1.6.0',
+            androidx_fragment_ktx_version: '1.3.2',
+            androidx_collection_ktx_version: '1.1.0',
 
             // Androidx Sys
-            androidxLocalbroadcastmanagerVersion: '1.0.0',
+            androidx_localbroadcastmanager_version: '1.0.0',
 
             // Androidx UI
-            androidxRecyclerviewVersion: '1.2.0',
-            androidxConstraintlayoutVersion: '2.0.4',
+            androidx_constraintlayout_version: '2.0.4',
+            androidx_recyclerview_version: '1.2.0',
 
             // Androidx Compose
-            androidxComposeVersion: '1.0.5',
-            androidxComposeActivityVersion: '1.3.1',
-            androidxComposeLifecycleVersion: '1.0.0-alpha07',
+            androidx_compose_version: '1.0.5',
+            androidx_activity_compose_version: '1.3.1',
+            androidx_compose_lifecycle_version: '1.0.0-alpha07',
 
             // Androidx Lifecycle
-            androidxLifecycleVersion: '2.3.1',
-            androidxLifecycleExtensionsVersion: '2.2.0',
+            androidx_lifecycle_version: '2.3.1',
+            androidx_lifecycle_extensions_version: '2.2.0',
 
             // Material Design Support
-            materialDesignVersion: '1.4.0',
+            material_design_version: '1.4.0',
 
             // Flexbox
-            //flexboxVersion:'0.3.0-alpha3',
-            flexboxVersion: '1.0.0',
+            //flexbox_version:'0.3.0-alpha3',
+            flexbox_version: '1.0.0',
 
             // Gson
-            gsonVersion: '2.8.6',
+            gson_version: '2.8.6',
 
             // Eventbus
-            eventbusVersion: '3.1.1',
+            eventbus_version: '3.1.1',
 
             // RxAndroid
-            rxandroidVersion: '1.0.0',
-            rxandroid3Version: '3.0.0',
+            rxandroid_version: '1.0.0',
+            rxandroid3_version: '3.0.0',
 
             // Joda Time
-            jodaTimeVersion: '2.10.9',
+            joda_time_version: '2.10.9',
 
             // Wechat
-            wechatVersion: '6.8.0',
+            wechat_version: '6.8.0',
 
             // Volley
-            volleyVersion: '1.0.19',
+            volley_version: '1.0.19',
 
             // Http
-            httpcoreVersion: '4.4.10',
-            httpmimeVersion: '4.5.6',
+            httpcore_version: '4.4.10',
+            httpmime_version: '4.5.6',
 
             // Retrofit2
-            retrofit2Version: '2.8.1',
-            retrofit2ConverterMoshiVersion: '2.6.2',
+            retrofit2_version: '2.8.1',
+            retrofit2_converter_moshi_version: '2.6.2',
 
             // Glide
-            glideApiVersion: '4.12.0',
-            glideCompileVersion: '4.12.0',
+            glide_api_version: '4.12.0',
+            glide_compile_version: '4.12.0',
 
             // Coil
-            coilVersion: '1.4.0',
+            coil_version: '1.4.0',
 
             // ARouter
-            arouterApiVersion: '1.3.1',
-            arouterAnnotationVersion: '1.0.4',
-            arouterCompileVersion: '1.1.4',
-            arouterRegisterVersion: '1.0.2', // 工程模块共有依赖
+            arouter_api_version: '1.3.1',
+            arouter_compile_version: '1.1.4',
+            arouter_annotation_version: '1.0.4',
+            arouter_register_version: '1.0.2', // 工程模块共有依赖
 
             // Test
-            junitVersion: '4.13.1',
-            androidxTestRunnerVersion: '1.1.2',
-            androidxTestJunitVersion: '1.1.2',
-            androidxTestEspressoCoreVersion: '3.3.0',
-            androidxTestComposeVersion: '1.0.5',
+            junit_version: '4.13.1',
+            androidx_test_runner_version: '1.1.2',
+            androidx_test_junit_version: '1.1.2',
+            androidx_test_espresso_core_version: '3.3.0',
+            androidx_test_compose_version: '1.0.5',
 
             // appcompat: "1.1.0",
             // recyclerview: "1.1.0",

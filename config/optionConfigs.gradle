@@ -2,8 +2,8 @@ apply from: "${rootDir}/config/versionConfigs.gradle"
 
 android {
     compileOptions {
-        sourceCompatibility languageVersion.javaVersion
-        targetCompatibility languageVersion.javaVersion
+        sourceCompatibility languageVersion.java_version
+        targetCompatibility languageVersion.java_version
     }
 
     kotlinOptions {
@@ -12,8 +12,8 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion dependenciesVersion.androidxComposeVersion
-        kotlinCompilerVersion dependenciesVersion.kotlinVersion
+        kotlinCompilerExtensionVersion dependenciesVersion.androidx_compose_version
+        kotlinCompilerVersion dependenciesVersion.kotlin_version
     }
 
     packagingOptions {

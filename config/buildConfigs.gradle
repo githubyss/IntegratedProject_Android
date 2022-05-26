@@ -7,7 +7,7 @@ android {
      * 构建工具的版本。
      * 其中包括了打包工具 aapt、dx 等等。这个工具的目录位于..sdk_path/build-tools/XX.XX.XX。
      */
-    buildToolsVersion androidVersion.buildToolsVersion
+    buildToolsVersion androidVersion.build_tools_version
 
     /**
      * SDK 编译版本。
@@ -17,7 +17,7 @@ android {
      *
      * 就是运行我们这个项目的需要的 SDK。比如如果我们需要在 Android 10.0 Q (API 29) 的版本运行，只要改为 29 就好了。
      */
-    compileSdkVersion androidVersion.compileSdkVersion
+    compileSdkVersion androidVersion.compile_sdk_version
 
     /**
      * defaultConfig：默认构建类型，主要针对开发生命周期的不同阶段进行配置。
@@ -36,7 +36,7 @@ android {
          * minSdkVersion 是各大 Android 应用商店用来判断用户设备是否可以安装某个应用的标志之一。
          * 在开发时 minSdkVersion 也起到一个重要角色：lint 默认会在项目中运行，它在你使用了低于 minSdkVersion 的 API 时会警告你，帮你避免调用不存在的 API 的运行时问题。如果只在较高版本的系统上才使用某些 API，通常使用运行时检查系统版本的方式解决。
          */
-        minSdkVersion androidVersion.minSdkVersion
+        minSdkVersion androidVersion.min_sdk_version
 
         /**
          * 新特性支持的 SDK 版本。
@@ -48,7 +48,7 @@ android {
          * 比如你将 targetSdkVersion 设置为 22，涉及某个（或某几个）权限，你直接在 mainfest 中配置权限即可，然后在 java 代码中进行获取权限后的逻辑处理即可。
          * 但如果你将 targetSdkVersion 设置为 23 或更高，你除了在 mainfest 中配置权限外，还需要在 java 代码中判断用户是否同意权限，如果同意，执行什么业务操作；如果不同意，执行什么业务操作（一般是提示某某权限被拒后，某某功能无法正常使用）。如果你只在 mainfest 中配置了权限，targetSdkVersion 又大于等于 23，Java 代码中不进行运行时权限的代码，你的应用程序就直接报错了。
          */
-        targetSdkVersion androidVersion.targetSdkVersion
+        targetSdkVersion androidVersion.target_sdk_version
 
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
 
