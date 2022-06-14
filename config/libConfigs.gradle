@@ -15,6 +15,7 @@ ext {
             kotlin_reflect: "org.jetbrains.kotlin:kotlin-reflect:$dependenciesVersion.kotlin_version",
             kotlinx_coroutines_core: "org.jetbrains.kotlinx:kotlinx-coroutines-core:$dependenciesVersion.kotlinx_coroutines_version",
             kotlinx_coroutines_android: "org.jetbrains.kotlinx:kotlinx-coroutines-android:$dependenciesVersion.kotlinx_coroutines_version",
+            kotlinx_coroutines_test: "org.jetbrains.kotlinx:kotlinx-coroutines-test:$dependenciesVersion.kotlinx_coroutines_version",
 
             /** Androidx Compatibility */
             androidx_appcompat: "androidx.appcompat:appcompat:$dependenciesVersion.androidx_appcompat_version",

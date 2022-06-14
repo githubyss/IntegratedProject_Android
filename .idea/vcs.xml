@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/../AccessibilityAutomaticAppModule_Android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../AccessibilityKitSdk_Android" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../CommonKitSdk_Android" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../CommonLibSdk_Android" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../CommonNetSdk_Android" vcs="Git" />

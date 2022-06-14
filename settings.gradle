@@ -31,6 +31,8 @@ if (buildAll.toBoolean()) {
     project(':SampleListAppModule_Android').projectDir = new File(settingsDir, '../SampleListAppModule_Android')
     include ':AccessibilityAutomaticAppModule_Android'
     project(':AccessibilityAutomaticAppModule_Android').projectDir = new File(settingsDir, '../AccessibilityAutomaticAppModule_Android')
+    include ':AccessibilityKitSdk_Android'
+    project(':AccessibilityKitSdk_Android').projectDir = new File(settingsDir, '../AccessibilityKitSdk_Android')
     include ':MorseCodeAppModule_Android'
     project(':MorseCodeAppModule_Android').projectDir = new File(settingsDir, '../MorseCodeAppModule_Android')
     include ':MorseCodeKitSdk_Android'
@@ -61,6 +63,8 @@ if (launchApp == "CommonNetSdk_Android") {
 if (launchApp == "SampleKotlinLibrary_Android") {
     include ':SampleKotlinLibrary_Android'
     project(':SampleKotlinLibrary_Android').projectDir = new File(settingsDir, '../SampleKotlinLibrary_Android')
+    include ':CommonKitSdk_Android'
+    project(':CommonKitSdk_Android').projectDir = new File(settingsDir, '../CommonKitSdk_Android')
 }
 
 if (launchApp == "SampleListAppModule_Android") {
@@ -77,6 +81,8 @@ if (launchApp == "SampleListAppModule_Android") {
 if (launchApp == "AccessibilityAutomaticAppModule_Android") {
     include ':AccessibilityAutomaticAppModule_Android'
     project(':AccessibilityAutomaticAppModule_Android').projectDir = new File(settingsDir, '../AccessibilityAutomaticAppModule_Android')
+    include ':AccessibilityKitSdk_Android'
+    project(':AccessibilityKitSdk_Android').projectDir = new File(settingsDir, '../AccessibilityKitSdk_Android')
     include ':CommonUiSdk_Android'
     project(':CommonUiSdk_Android').projectDir = new File(settingsDir, '../CommonUiSdk_Android')
     include ':CommonKitSdk_Android'
