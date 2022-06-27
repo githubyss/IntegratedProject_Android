@@ -57,7 +57,7 @@ android {
         // 一个是 proguard-android-optimize.txt，另一个是 proguard-android.txt。两者最主要的区别是前者加入了一些优化命令。
         // proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), "${rootDir.getAbsolutePath()}/proguard/proguard-rules.pro"
-        consumerProguardFiles 'consumer-rules.pro'
+        consumerProguardFiles "${rootDir.getAbsolutePath()}/proguard/consumer-rules.pro"
     }
 
     /** buildTypes：构建类型，主要针对开发生命周期的不同阶段进行配置。 */

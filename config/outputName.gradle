@@ -1,0 +1,62 @@
+apply from: '../../../build/config.gradle'
+
+android {
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+			
+            def SEP = "-"
+            //def buildType = variant.variantData.variantConfiguration.buildType.name
+			def buildType = variant.buildType.name
+            def date = new Date();
+            def formattedDate = date.format('yyyyMMdd-HHmm')
+			def flavor = variant.productFlavors[0].name
+            def vCode = android.versionCode
+            outputFileName = "${applicationId}${SEP}${formattedDate}${SEP}${vCode}${SEP}${flavor}${SEP}${buildType}.apk"
+        }
+    }
+	
+	  buildTypes {
+        debug {
+            signingConfig null
+        }
+    }
+
+    signingConfigs {
+        AOSP {
+            storeFile file("${project.rootDir}/../../build/keystore/android.p.jks")
+            keyAlias 'android'
+            keyPassword '123456'
+            storePassword '123456'
+        }
+        lantonda {
+            storeFile file("${project.rootDir}/../../build/keystore/chekexun.keystore")
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storePassword 'android'
+        }
+		
+
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+        aosp {
+            dimension "default"
+            signingConfig signingConfigs.AOSP
+        }
+        lantonda {
+            dimension "default"
+            signingConfig signingConfigs.lantonda
+        }
+		nowada1280x720{
+			dimension "default"
+            signingConfig signingConfigs.AOSP
+        }
+        nowada1024x600{
+			dimension "default"
+            signingConfig signingConfigs.AOSP
+        }
+    }
+
+}
+
