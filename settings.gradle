@@ -15,8 +15,12 @@ println "rootDir: ${rootDir}"
 println "launchApp: ${launchApp}"
 println "buildAll: ${buildAll}"
 
+include ':CommonLibSdk_Android'
+project(':CommonLibSdk_Android').projectDir = new File(settingsDir, '../CommonLibSdk_Android')
 include ':CommonResSdk_Android'
 project(':CommonResSdk_Android').projectDir = new File(settingsDir, '../CommonResSdk_Android')
+include ':CommonBaseSdk_Android'
+project(':CommonBaseSdk_Android').projectDir = new File(settingsDir, '../CommonBaseSdk_Android')
 include ':DesignPatternLibrary_Android'
 project(':DesignPatternLibrary_Android').projectDir = new File(settingsDir, '../DesignPatternLibrary_Android')
 
@@ -27,6 +31,10 @@ if (buildAll.toBoolean()) {
     project(':CommonUiSdk_Android').projectDir = new File(settingsDir, '../CommonUiSdk_Android')
     include ':CommonNetSdk_Android'
     project(':CommonNetSdk_Android').projectDir = new File(settingsDir, '../CommonNetSdk_Android')
+    include ':SampleKotlinLibrary_Android'
+    project(':SampleKotlinLibrary_Android').projectDir = new File(settingsDir, '../SampleKotlinLibrary_Android')
+    include ':SampleArchitectureLibrary_Android'
+    project(':SampleArchitectureLibrary_Android').projectDir = new File(settingsDir, '../SampleArchitectureLibrary_Android')
     include ':SampleListAppModule_Android'
     project(':SampleListAppModule_Android').projectDir = new File(settingsDir, '../SampleListAppModule_Android')
     include ':AccessibilityAutomaticAppModule_Android'
@@ -63,6 +71,13 @@ if (launchApp == "CommonNetSdk_Android") {
 if (launchApp == "SampleKotlinLibrary_Android") {
     include ':SampleKotlinLibrary_Android'
     project(':SampleKotlinLibrary_Android').projectDir = new File(settingsDir, '../SampleKotlinLibrary_Android')
+    include ':CommonKitSdk_Android'
+    project(':CommonKitSdk_Android').projectDir = new File(settingsDir, '../CommonKitSdk_Android')
+}
+
+if (launchApp == "SampleArchitectureLibrary_Android") {
+    include ':SampleArchitectureLibrary_Android'
+    project(':SampleArchitectureLibrary_Android').projectDir = new File(settingsDir, '../SampleArchitectureLibrary_Android')
     include ':CommonKitSdk_Android'
     project(':CommonKitSdk_Android').projectDir = new File(settingsDir, '../CommonKitSdk_Android')
 }

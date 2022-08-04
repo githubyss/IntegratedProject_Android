@@ -102,6 +102,9 @@ ext {
             alibaba_arouter_api: "com.alibaba:arouter-api:$dependenciesVersion.arouter_api_version",
             alibaba_arouter_compiler: "com.alibaba:arouter-compiler:$dependenciesVersion.arouter_compile_version",
 
+            /** Leakcanary */
+            leakcanary: "com.squareup.leakcanary:leakcanary-android:$dependenciesVersion.leakcanary_version",
+
             /** Test */
             junit: "junit:junit:$dependenciesVersion.junit_version",
             androidx_test_junit: "androidx.test.ext:junit:$dependenciesVersion.androidx_test_junit_version",

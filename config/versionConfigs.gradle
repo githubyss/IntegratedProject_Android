@@ -98,6 +98,9 @@ ext {
             arouter_annotation_version: '1.0.4',
             arouter_register_version: '1.0.2', // 工程模块共有依赖
 
+            // Leakcanary
+            leakcanary_version: '2.9.1',
+
             // Test
             junit_version: '4.13.1',
             androidx_test_runner_version: '1.1.2',
