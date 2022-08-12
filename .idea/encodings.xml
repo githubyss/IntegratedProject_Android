@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
-    <file url="file://$PROJECT_DIR$/../CommonKitSdk_Android/src/main/kotlin/com/githubyss/mobile/common/kit/base/activity_fragment/binding_reflect/BaseReflectBindingFragment.kt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../CommonBaseSdk_Android/src/main/kotlin/com/githubyss/common/base/activity_fragment/binding_reflect/BaseReflectBindingFragment.kt" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
