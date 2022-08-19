@@ -41,6 +41,8 @@ if (buildAll.toBoolean()) {
     project(':AccessibilityAutomaticAppModule_Android').projectDir = new File(settingsDir, '../AccessibilityAutomaticAppModule_Android')
     include ':AccessibilityKitSdk_Android'
     project(':AccessibilityKitSdk_Android').projectDir = new File(settingsDir, '../AccessibilityKitSdk_Android')
+    include ':FakeAppModule_Android'
+    project(':FakeAppModule_Android').projectDir = new File(settingsDir, '../FakeAppModule_Android')
     include ':MorseCodeAppModule_Android'
     project(':MorseCodeAppModule_Android').projectDir = new File(settingsDir, '../MorseCodeAppModule_Android')
     include ':MorseCodeKitSdk_Android'
@@ -85,12 +87,12 @@ if (launchApp == "SampleArchitectureLibrary_Android") {
 if (launchApp == "SampleListAppModule_Android") {
     include ':SampleListAppModule_Android'
     project(':SampleListAppModule_Android').projectDir = new File(settingsDir, '../SampleListAppModule_Android')
-    include ':CommonKitSdk_Android'
-    project(':CommonKitSdk_Android').projectDir = new File(settingsDir, '../CommonKitSdk_Android')
     include ':CommonNetSdk_Android'
     project(':CommonNetSdk_Android').projectDir = new File(settingsDir, '../CommonNetSdk_Android')
     include ':CommonUiSdk_Android'
     project(':CommonUiSdk_Android').projectDir = new File(settingsDir, '../CommonUiSdk_Android')
+    include ':CommonKitSdk_Android'
+    project(':CommonKitSdk_Android').projectDir = new File(settingsDir, '../CommonKitSdk_Android')
 }
 
 if (launchApp == "AccessibilityAutomaticAppModule_Android") {
@@ -98,6 +100,15 @@ if (launchApp == "AccessibilityAutomaticAppModule_Android") {
     project(':AccessibilityAutomaticAppModule_Android').projectDir = new File(settingsDir, '../AccessibilityAutomaticAppModule_Android')
     include ':AccessibilityKitSdk_Android'
     project(':AccessibilityKitSdk_Android').projectDir = new File(settingsDir, '../AccessibilityKitSdk_Android')
+    include ':CommonUiSdk_Android'
+    project(':CommonUiSdk_Android').projectDir = new File(settingsDir, '../CommonUiSdk_Android')
+    include ':CommonKitSdk_Android'
+    project(':CommonKitSdk_Android').projectDir = new File(settingsDir, '../CommonKitSdk_Android')
+}
+
+if (launchApp == "FakeAppModule_Android") {
+    include ':FakeAppModule_Android'
+    project(':FakeAppModule_Android').projectDir = new File(settingsDir, '../FakeAppModule_Android')
     include ':CommonUiSdk_Android'
     project(':CommonUiSdk_Android').projectDir = new File(settingsDir, '../CommonUiSdk_Android')
     include ':CommonKitSdk_Android'
