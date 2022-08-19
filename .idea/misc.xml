@@ -23,6 +23,8 @@
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/AccessibilityAutomaticAppModule_Android/src/main/res/wechat_lucky_money/layout/fragment_wechat_lucky_money_setting.xml" value="0.15885416666666666" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/AccessibilityAutomaticAppModule_Android/src/taobaoRushBuy/res/layout/fragment_taobao_rush_buy_setting.xml" value="0.2962962962962963" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/AccessibilityAutomaticAppModule_Android/src/wechatLuckyMoney/res/layout/fragment_wechat_lucky_money_setting.xml" value="0.43148148148148147" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonBaseSdk_Android/src/app/res/homepage/layout/combase_fragment_homepage.xml" value="0.1" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonBaseSdk_Android/src/main/res/activity/layout/combase_activity_base_toolbar.xml" value="0.3039257070493879" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/alone/res/homepage/layout/comkit_fragment_homepage.xml" value="0.23489583333333333" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/app/res/homepage/layout/comkit_fragment_homepage.xml" value="0.33" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/app/res/json_utils/layout/comkit_fragment_json_utils.xml" value="0.19010416666666666" />
@@ -36,6 +38,7 @@
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/app/res/view_binding/inline/layout/comkit_fragment_view_binding_inline.xml" value="0.15185185185185185" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/app/res/view_binding/reflect/layout/comkit_fragment_view_binding_reflect.xml" value="0.1234375" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/app/res/view_binding/reflect/layout/comui_fragment_view_binding_reflect.xml" value="0.1" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/app/res/web_view/layout/comkit_fragment_web_view.xml" value="0.25" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/main/res/activity/layout/comkit_activity_base.xml" value="0.24166666666666667" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/main/res/activity/layout/comkit_activity_base_toolbar.xml" value="0.24166666666666667" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/main/res/activity/layout/comkit_toolbar_base.xml" value="0.1109375" />

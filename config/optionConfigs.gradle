@@ -15,8 +15,8 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion dependenciesVersion.androidx_compose_version
-        kotlinCompilerVersion dependenciesVersion.kotlin_version
+        // kotlinCompilerVersion dependenciesVersion.kotlin_version
+        kotlinCompilerExtensionVersion dependenciesVersion.androidx_compose_kotlin_compiler_extension_version
     }
 
     packagingOptions {

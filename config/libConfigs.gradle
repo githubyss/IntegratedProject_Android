@@ -19,6 +19,7 @@ ext {
 
             /** Androidx Compatibility */
             androidx_appcompat: "androidx.appcompat:appcompat:$dependenciesVersion.androidx_appcompat_version",
+            androidx_activity_compose: "androidx.activity:activity-compose:$dependenciesVersion.androidx_activity_compose_version",
 
             /** Androidx KTX */
             androidx_core_ktx: "androidx.core:core-ktx:$dependenciesVersion.androidx_core_ktx_version",
@@ -30,6 +31,7 @@ ext {
 
             /** Androidx UI */
             androidx_constraintlayout: "androidx.constraintlayout:constraintlayout:$dependenciesVersion.androidx_constraintlayout_version",
+            androidx_constraintlayout_compose: "androidx.constraintlayout:constraintlayout-compose:$dependenciesVersion.androidx_constraintlayout_compose_version",
             androidx_recyclerview: "androidx.recyclerview:recyclerview:$dependenciesVersion.androidx_recyclerview_version",
 
             /** Androidx Compose Ui */
@@ -41,12 +43,6 @@ ext {
             androidx_compose_material: "androidx.compose.material:material:$dependenciesVersion.androidx_compose_version",
             androidx_compose_animation: "androidx.compose.animation:animation:$dependenciesVersion.androidx_compose_version", // 依赖 androidx_compose_material 后，会自动导包，可以不显示声明依赖。
             androidx_compose_foundation: "androidx.compose.foundation:foundation:$dependenciesVersion.androidx_compose_version", // 依赖 androidx_compose_material 后，会自动导包，可以不显示声明依赖。
-
-            /** Androidx Compose Activity Extensions*/
-            androidx_activity_compose: "androidx.activity:activity-compose:$dependenciesVersion.androidx_activity_compose_version",
-
-            /** Androidx Compose Ui Extensions */
-            androidx_constraintlayout_compose: "androidx.constraintlayout:constraintlayout-compose:$dependenciesVersion.androidx_constraintlayout_compose_version",
 
             /** Androidx Lifecycle */
 
