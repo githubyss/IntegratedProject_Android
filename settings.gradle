@@ -25,6 +25,8 @@ include ':DesignPatternLibrary_Android'
 project(':DesignPatternLibrary_Android').projectDir = new File(settingsDir, '../DesignPatternLibrary_Android')
 
 if (buildAll.toBoolean()) {
+    include ':app'
+    project(':app').projectDir = new File(settingsDir, '../app')
     include ':CommonKitSdk_Android'
     project(':CommonKitSdk_Android').projectDir = new File(settingsDir, '../CommonKitSdk_Android')
     include ':CommonUiSdk_Android'

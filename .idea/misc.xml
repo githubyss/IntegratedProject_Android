@@ -25,6 +25,7 @@
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/AccessibilityAutomaticAppModule_Android/src/wechatLuckyMoney/res/layout/fragment_wechat_lucky_money_setting.xml" value="0.43148148148148147" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonBaseSdk_Android/src/app/res/homepage/layout/combase_fragment_homepage.xml" value="0.1" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonBaseSdk_Android/src/main/res/activity/layout/combase_activity_base_toolbar.xml" value="0.3039257070493879" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonBaseSdk_Android/src/main/res/activity/layout/combase_toolbar_base.xml" value="0.36923076923076925" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/alone/res/homepage/layout/comkit_fragment_homepage.xml" value="0.23489583333333333" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/app/res/homepage/layout/comkit_fragment_homepage.xml" value="0.33" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonKitSdk_Android/src/app/res/json_utils/layout/comkit_fragment_json_utils.xml" value="0.19010416666666666" />
@@ -84,8 +85,12 @@
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonResSdk_Android/src/main/res/drawable/comres_button_toggle_bg_rectangle_micro_blue_transparent.xml" value="0.15572916666666667" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonResSdk_Android/src/main/res/drawable/comres_icon_launcher_bg_grid.xml" value="0.19375" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonResSdk_Android/src/main/res/launcher/drawable/comres_icon_launcher_bg_grid.xml" value="0.15555555555555556" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonResSdk_Android/src/main/res/launcher/drawable/comres_icon_launcher_default_bg_grid.xml" value="0.1785" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonResSdk_Android/src/main/res/launcher/drawable/comres_icon_launcher_default_fg_android.xml" value="0.1785" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonResSdk_Android/src/main/res/launcher/drawable/comres_icon_launcher_fg_android.xml" value="0.15555555555555556" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonResSdk_Android/src/main/res/launcher/mipmap-anydpi-v26/comres_ic_launcher.xml" value="0.15185185185185185" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonResSdk_Android/src/main/res/launcher/mipmap-anydpi-v26/comres_ic_launcher_default.xml" value="0.1785" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonResSdk_Android/src/main/res/launcher/mipmap-anydpi-v26/comres_ic_launcher_default_round.xml" value="0.1785" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonResSdk_Android/src/main/res/launcher/mipmap-anydpi-v26/comres_ic_launcher_round.xml" value="0.15185185185185185" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonResSdk_Android/src/main/res/launcher/mipmap-anydpi-v26/comui_ic_launcher_round.xml" value="0.16927083333333334" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonResSdk_Android/src/main/res/mipmap-anydpi-v26/comres_ic_launcher.xml" value="0.1" />
@@ -150,6 +155,12 @@
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/app/res/recycler_view/search/layout/comui_list_item_special_topic.xml" value="0.1390625" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/app/res/recycler_view/three_layer/layout/comui_fragment_three_layer_recycler_view.xml" value="0.12135416666666667" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/app/res/time_countdown/layout/comui_fragment_time_countdown.xml" value="0.1203125" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/app/res/widget/drawable-v21/app_widget_inner_view_background.xml" value="0.1055" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/app/res/widget/drawable/comui_app_widget_background.xml" value="0.2475" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/app/res/widget/layout/comui_app_widget.xml" value="0.33" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/app/res/widget_schedule/drawable/comui_widget_schedule_background.xml" value="0.2475" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/app/res/widget_schedule/drawable/comui_widget_schedule_inner_view_background.xml" value="0.251" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/app/res/widget_schedule/layout/comui_widget_schedule.xml" value="0.25427350427350426" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/main/res/auto_hide_floating_window/drawable/comui_auto_hide_floating_window_bg.xml" value="0.11851851851851852" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/main/res/auto_hide_floating_window/layout/comui_auto_hide_floating_window.xml" value="0.1" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/main/res/button/drawable/comui_button_checkbox_bg_rectangle_micro_gray_blue.xml" value="0.1171875" />
@@ -251,7 +262,15 @@
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/main/res/tag/drawable/comui_tag_bg_rectangle_micro_gray.xml" value="0.21354166666666666" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/main/res/tag/drawable/comui_tag_bg_rectangle_micro_orange.xml" value="0.20729166666666668" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/main/res/time_countdown/drawable/comui_time_bg.xml" value="0.2791666666666667" />
-        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/main/res/time_countdown/layout/comui_time_countdown.xml" value="0.258974358974359" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/main/res/time_countdown/layout/comui_time_countdown.xml" value="0.33" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/main/res/toolbar/layout/comui_toolbar_normal.xml" value="0.36923076923076925" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/main/res/widget/drawable-v21/app_widget_background.xml" value="0.1785" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/main/res/widget/drawable-v21/app_widget_inner_view_background.xml" value="0.1785" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/CommonUiSdk_Android/src/main/res/widget/layout/new_app_widget.xml" value="0.287962962962963" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/FakeAppModule_Android/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1785" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/FakeAppModule_Android/src/main/res/drawable/ic_launcher_background.xml" value="0.1785" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/FakeAppModule_Android/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1785" />
+        <entry key="..\:/Workspace/Programming/Android/ace/Integrated/FakeAppModule_Android/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1785" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/MorseCodeAppModule_Android/src/main/res/layout/mc_fragment_char_pick.xml" value="0.1" />
         <entry key="..\:/Workspace/Programming/Android/ace/Integrated/MorseCodeAppModule_Android/src/main/res/menu/mc_menu_play_mode.xml" value="0.1" />
       </map>

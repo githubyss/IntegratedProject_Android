@@ -60,54 +60,71 @@ ext {
             androidx_lifecycle_livedata: "androidx.lifecycle:lifecycle-livedata:$dependenciesVersion.androidx_lifecycle_version",
             androidx_lifecycle_livedata_ktx: "androidx.lifecycle:lifecycle-livedata-ktx:$dependenciesVersion.androidx_lifecycle_version",
 
+            /** Androidx Lifecycle Extensions */
             androidx_lifecycle_extensions: "androidx.lifecycle:lifecycle-extensions:$dependenciesVersion.androidx_lifecycle_extensions_version",
-            // android_arch_lifecycle_extensions :"android.arch.lifecycle:extensions:1.1.1"
 
-            /** Material Design Support */
+            /** Androidx Room */
+            androidx_room: "androidx.room:room-runtime:$dependenciesVersion.room_version",
+            androidx_room_compiler: "androidx.room:room-compiler:$dependenciesVersion.room_version",
+
+            /** Google Material */
             google_material: "com.google.android.material:material:$dependenciesVersion.material_design_version",
 
-            /** Flexbox */
+            /** Google Flexbox */
             google_flexbox: "com.google.android:flexbox:$dependenciesVersion.flexbox_version",
 
-            /** Gson */
+            /** Google Gson */
             google_gson: "com.google.code.gson:gson:$dependenciesVersion.gson_version",
 
-            /** Eventbus */
+            /** Google Zxing */
+            zxing: "com.google.zxing:core:$dependenciesVersion.zxing_version",
+            zxing_android: "com.google.zxing:android-core:$dependenciesVersion.zxing_android_version",
+            zxing_android_integration: "com.google.zxing:android-integration:$dependenciesVersion.zxing_android_version",
+
+            /** Zxing Android Embedded */
+            zxing_android_embedded: "com.journeyapps:zxing-android-embedded:$dependenciesVersion.zxing_android_embedded_version",
+
+            /** Zxing Lite */
+            zxing_lite: "com.king.zxing:zxing-lite:$dependenciesVersion.zxing_lite_version",
+
+            /** Bumptech Glide */
+            bumptech_glide: "com.github.bumptech.glide:glide:$dependenciesVersion.glide_api_version",
+            bumptech_glide_compiler: "com.github.bumptech.glide:compiler:$dependenciesVersion.glide_compile_version",
+
+            /** Coil */
+            coil: "io.coil-kt:coil:$dependenciesVersion.coil_version",
+            coil_gif: "io.coil-kt:coil-gif:$dependenciesVersion.coil_version",
+            coil_compose: "io.coil-kt:coil-compose:$dependenciesVersion.coil_version",
+
+            /** Joda Time */
+            joda_time: "joda-time:joda-time:$dependenciesVersion.joda_time_version",
+
+            /** Alibaba ARouter */
+            alibaba_arouter: "com.alibaba:arouter-api:$dependenciesVersion.arouter_api_version",
+            alibaba_arouter_compiler: "com.alibaba:arouter-compiler:$dependenciesVersion.arouter_compile_version",
+
+            /** Tencent Wechat */
+            tencent_wechat_sdk_android: "com.tencent.mm.opensdk:wechat-sdk-android:$dependenciesVersion.wechat_version",
+
+            /** Greenrobot Eventbus */
             greenrobot_eventbus: "org.greenrobot:eventbus:$dependenciesVersion.eventbus_version",
 
             /** RxAndroid */
             // reactivex_rxandroid :"io.reactivex:rxandroid:$dependenciesVersion.rxandroid_version",
             reactivex_rxjava3_rxandroid: "io.reactivex.rxjava3:rxandroid:$dependenciesVersion.rxandroid3_version",
 
-            /** Joda Time */
-            joda_time: "joda-time:joda-time:$dependenciesVersion.joda_time_version",
-
-            /** Wechat */
-            tencent_wechat_sdk_android: "com.tencent.mm.opensdk:wechat-sdk-android:$dependenciesVersion.wechat_version",
-
-            /** Http */
+            /** Apache Http */
             apache_httpcore: "org.apache.httpcomponents:httpcore:$dependenciesVersion.httpcore_version",
             apache_httpmime: "org.apache.httpcomponents:httpmime:$dependenciesVersion.httpmime_version",
 
-            /** Volley */
+            /** Mcxiaoke Volley */
             mcxiaoke_volley: "com.mcxiaoke.volley:library:$dependenciesVersion.volley_version",
 
-            /** Retrofit2 */
+            /** Squareup Retrofit2 */
             squareup_retrofit2: "com.squareup.retrofit2:retrofit:$dependenciesVersion.retrofit2_version",
             squareup_retrofit2_converter_moshi: "com.squareup.retrofit2:converter-moshi:$dependenciesVersion.retrofit2_converter_moshi_version",
 
-            /** Glide */
-            bumptech_glide: "com.github.bumptech.glide:glide:$dependenciesVersion.glide_api_version",
-            bumptech_glide_compiler: "com.github.bumptech.glide:compiler:$dependenciesVersion.glide_compile_version",
-
-            /** Coil */
-            coil: "io.coil-kt:coil:$dependenciesVersion.coil_version",
-
-            /** ARouter */
-            alibaba_arouter_api: "com.alibaba:arouter-api:$dependenciesVersion.arouter_api_version",
-            alibaba_arouter_compiler: "com.alibaba:arouter-compiler:$dependenciesVersion.arouter_compile_version",
-
-            /** Leakcanary */
+            /** Squareup Leakcanary */
             leakcanary: "com.squareup.leakcanary:leakcanary-android:$dependenciesVersion.leakcanary_version",
 
             /** Test */
@@ -115,16 +132,5 @@ ext {
             androidx_test_junit: "androidx.test.ext:junit:$dependenciesVersion.androidx_test_junit_version",
             androidx_test_espresso_core: "androidx.test.espresso:espresso-core:$dependenciesVersion.androidx_test_espresso_core_version",
             // androidx_compose_ui_test_junit4: "androidx.compose.ui:ui-test-junit4:$dependenciesVersion.androidx_test_compose_version",
-
-
-            // arouterapi: "com.alibaba:arouter-api:${dependenciesVersion.arouterapi}",
-            // aroutercompiler: "com.alibaba:arouter-compiler:${dependenciesVersion.aroutercompiler}",
-            // butterknife: "com.jakewharton:butterknife:${dependenciesVersion.butterknife}",
-            // bkannotation: "com.jakewharton:butterknife-compiler:${dependenciesVersion.butterknife}",
-            // appcompat: "androidx.appcompat:appcompat:${dependenciesVersion.appcompat}",
-            // glide: "com.github.bumptech.glide:glide:${dependenciesVersion.glide}",
-            // glideannotation: "com.github.bumptech.glide:compiler:${dependenciesVersion.glide}",
-            // room_runtime: "androidx.room:room-runtime:${dependenciesVersion.room_runtime}",
-            // room_compiler: "androidx.room:room-compiler:${dependenciesVersion.room_compiler}"
     ]
 }
