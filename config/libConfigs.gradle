@@ -7,7 +7,8 @@ ext {
             kotlin_gradle_plugin: "org.jetbrains.kotlin:kotlin-gradle-plugin:$dependenciesVersion.kotlin_version",
             // kotlin_android_extensions: "org.jetbrains.kotlin:kotlin-android-extensions:$dependenciesVersion.kotlin_version",
             neenbedankt_gradle_plugins_android_apt: "com.neenbedankt.gradle.plugins:android-apt:$dependenciesVersion.android_apt_version",
-            alibaba_arouter_register: "com.alibaba:arouter-register:$dependenciesVersion.arouter_register_version",
+            greenrobot_greendao_gradle_plugin: "org.greenrobot:greendao-gradle-plugin:$dependenciesVersion.greenrobot_greendao_version",
+            alibaba_arouter_register: "com.alibaba:arouter-register:$dependenciesVersion.alibaba_arouter_register_version",
 
             /** Kotlin */
             kotlin_stdlib: "org.jetbrains.kotlin:kotlin-stdlib:$dependenciesVersion.kotlin_version", // 配置 dependencies {classpath dependenciesLib.kotlin_gradle_plugin} 后，会自动导包，可以不显示声明依赖。
@@ -34,52 +35,44 @@ ext {
             androidx_constraintlayout_compose: "androidx.constraintlayout:constraintlayout-compose:$dependenciesVersion.androidx_constraintlayout_compose_version",
             androidx_recyclerview: "androidx.recyclerview:recyclerview:$dependenciesVersion.androidx_recyclerview_version",
 
-            /** Androidx Compose Ui */
+            /** Androidx Compose */
             androidx_compose_ui: "androidx.compose.ui:ui:$dependenciesVersion.androidx_compose_version", // 依赖 androidx_compose_material 后，会自动导包，可以不显示声明依赖。
             androidx_compose_ui_tooling: "androidx.compose.ui:ui-tooling:$dependenciesVersion.androidx_compose_version",
             androidx_compose_ui_tooling_data: "androidx.compose.ui:ui-tooling-data:$dependenciesVersion.androidx_compose_version", // 依赖 androidx_compose_ui_tooling 后，会自动导包，可以不显示声明依赖。
             androidx_compose_ui_tooling_preview: "androidx.compose.ui:ui-tooling-preview:$dependenciesVersion.androidx_compose_version", // 依赖 androidx_compose_ui_tooling 后，会自动导包，可以不显示声明依赖。
-
             androidx_compose_material: "androidx.compose.material:material:$dependenciesVersion.androidx_compose_version",
             androidx_compose_animation: "androidx.compose.animation:animation:$dependenciesVersion.androidx_compose_version", // 依赖 androidx_compose_material 后，会自动导包，可以不显示声明依赖。
             androidx_compose_foundation: "androidx.compose.foundation:foundation:$dependenciesVersion.androidx_compose_version", // 依赖 androidx_compose_material 后，会自动导包，可以不显示声明依赖。
 
             /** Androidx Lifecycle */
-
             /** Androidx Lifecycle Only (without ViewModel or LiveData) */
             androidx_lifecycle_runtime: "androidx.lifecycle:lifecycle-runtime:$dependenciesVersion.androidx_lifecycle_version",
             androidx_lifecycle_runtime_ktx: "androidx.lifecycle:lifecycle-runtime-ktx:$dependenciesVersion.androidx_lifecycle_version",
-
-            /** Androidx Lifecycle ViewModel */
             androidx_lifecycle_viewmodel: "androidx.lifecycle:lifecycle-viewmodel:$dependenciesVersion.androidx_lifecycle_version",
             androidx_lifecycle_viewmodel_ktx: "androidx.lifecycle:lifecycle-viewmodel-ktx:$dependenciesVersion.androidx_lifecycle_version",
             androidx_lifecycle_viewmodel_compose: "androidx.lifecycle:lifecycle-viewmodel-compose:$dependenciesVersion.androidx_lifecycle_version",
             androidx_lifecycle_viewmodel_savedstate: "androidx.lifecycle:lifecycle-viewmodel-savedstate$dependenciesVersion.androidx_lifecycle_version",
-
-            /** Androidx Lifecycle Livedata */
             androidx_lifecycle_livedata: "androidx.lifecycle:lifecycle-livedata:$dependenciesVersion.androidx_lifecycle_version",
             androidx_lifecycle_livedata_ktx: "androidx.lifecycle:lifecycle-livedata-ktx:$dependenciesVersion.androidx_lifecycle_version",
-
-            /** Androidx Lifecycle Extensions */
             androidx_lifecycle_extensions: "androidx.lifecycle:lifecycle-extensions:$dependenciesVersion.androidx_lifecycle_extensions_version",
 
             /** Androidx Room */
-            androidx_room: "androidx.room:room-runtime:$dependenciesVersion.room_version",
-            androidx_room_compiler: "androidx.room:room-compiler:$dependenciesVersion.room_version",
+            androidx_room: "androidx.room:room-runtime:$dependenciesVersion.androidx_room_version",
+            androidx_room_compiler: "androidx.room:room-compiler:$dependenciesVersion.androidx_room_version",
 
             /** Google Material */
-            google_material: "com.google.android.material:material:$dependenciesVersion.material_design_version",
+            google_material: "com.google.android.material:material:$dependenciesVersion.google_material_version",
 
             /** Google Flexbox */
-            google_flexbox: "com.google.android:flexbox:$dependenciesVersion.flexbox_version",
+            google_flexbox: "com.google.android:flexbox:$dependenciesVersion.google_flexbox_version",
 
             /** Google Gson */
-            google_gson: "com.google.code.gson:gson:$dependenciesVersion.gson_version",
+            google_gson: "com.google.code.gson:gson:$dependenciesVersion.google_gson_version",
 
             /** Google Zxing */
-            zxing: "com.google.zxing:core:$dependenciesVersion.zxing_version",
-            zxing_android: "com.google.zxing:android-core:$dependenciesVersion.zxing_android_version",
-            zxing_android_integration: "com.google.zxing:android-integration:$dependenciesVersion.zxing_android_version",
+            google_zxing: "com.google.zxing:core:$dependenciesVersion.google_zxing_version",
+            google_zxing_android: "com.google.zxing:android-core:$dependenciesVersion.google_zxing_android_version",
+            google_zxing_android_integration: "com.google.zxing:android-integration:$dependenciesVersion.google_zxing_android_version",
 
             /** Zxing Android Embedded */
             zxing_android_embedded: "com.journeyapps:zxing-android-embedded:$dependenciesVersion.zxing_android_embedded_version",
@@ -88,8 +81,12 @@ ext {
             zxing_lite: "com.king.zxing:zxing-lite:$dependenciesVersion.zxing_lite_version",
 
             /** Bumptech Glide */
-            bumptech_glide: "com.github.bumptech.glide:glide:$dependenciesVersion.glide_api_version",
-            bumptech_glide_compiler: "com.github.bumptech.glide:compiler:$dependenciesVersion.glide_compile_version",
+            bumptech_glide: "com.github.bumptech.glide:glide:$dependenciesVersion.bumptech_glide_version",
+            bumptech_glide_compiler: "com.github.bumptech.glide:compiler:$dependenciesVersion.bumptech_glide_version",
+
+            /** Airbnb Lottie */
+            airbnb_lottie: "com.airbnb.android:lottie:$dependenciesVersion.airbnb_lottie_version",
+            airbnb_lottie_compose: "com.airbnb.android:lottie-compose:$dependenciesVersion.airbnb_lottie_version",
 
             /** Coil */
             coil: "io.coil-kt:coil:$dependenciesVersion.coil_version",
@@ -100,32 +97,50 @@ ext {
             joda_time: "joda-time:joda-time:$dependenciesVersion.joda_time_version",
 
             /** Alibaba ARouter */
-            alibaba_arouter: "com.alibaba:arouter-api:$dependenciesVersion.arouter_api_version",
-            alibaba_arouter_compiler: "com.alibaba:arouter-compiler:$dependenciesVersion.arouter_compile_version",
+            alibaba_arouter: "com.alibaba:arouter-api:$dependenciesVersion.alibaba_arouter_version",
+            alibaba_arouter_compiler: "com.alibaba:arouter-compiler:$dependenciesVersion.alibaba_arouter_compile_version",
 
             /** Tencent Wechat */
-            tencent_wechat_sdk_android: "com.tencent.mm.opensdk:wechat-sdk-android:$dependenciesVersion.wechat_version",
+            tencent_wechat_android: "com.tencent.mm.opensdk:wechat-sdk-android:$dependenciesVersion.tencent_wechat_version",
 
             /** Greenrobot Eventbus */
-            greenrobot_eventbus: "org.greenrobot:eventbus:$dependenciesVersion.eventbus_version",
+            greenrobot_eventbus: "org.greenrobot:eventbus:$dependenciesVersion.greenrobot_eventbus_version",
 
-            /** RxAndroid */
-            // reactivex_rxandroid :"io.reactivex:rxandroid:$dependenciesVersion.rxandroid_version",
-            reactivex_rxjava3_rxandroid: "io.reactivex.rxjava3:rxandroid:$dependenciesVersion.rxandroid3_version",
+            /** Greenrobot Greendao */
+            greenrobot_greendao: "org.greenrobot:greendao:$dependenciesVersion.greenrobot_greendao_version",
+
+            /** Reactivex Rxjava / Rxandroid */
+            reactivex_rxjava: "io.reactivex:rxjava:$dependenciesVersion.reactivex_rxjava_version",
+            reactivex_rxandroid: "io.reactivex:rxandroid:$dependenciesVersion.reactivex_rxandroid_version",
+            reactivex_rxjava3: "io.reactivex.rxjava3:rxjava:$dependenciesVersion.reactivex_rxjava3_version",
+            reactivex_rxkotlin3: "io.reactivex.rxjava3:rxkotlin:$dependenciesVersion.reactivex_rxkotlin3_version",
+            reactivex_rxandroid3: "io.reactivex.rxjava3:rxandroid:$dependenciesVersion.reactivex_rxandroid3_version",
 
             /** Apache Http */
-            apache_httpcore: "org.apache.httpcomponents:httpcore:$dependenciesVersion.httpcore_version",
-            apache_httpmime: "org.apache.httpcomponents:httpmime:$dependenciesVersion.httpmime_version",
+            apache_httpcore: "org.apache.httpcomponents:httpcore:$dependenciesVersion.apache_httpcore_version",
+            apache_httpmime: "org.apache.httpcomponents:httpmime:$dependenciesVersion.apache_httpmime_version",
+
+            /** Lzy Okgo */
+            lzy_okgo: "com.lzy.net:okgo:$dependenciesVersion.lzy_okgo_version",
 
             /** Mcxiaoke Volley */
-            mcxiaoke_volley: "com.mcxiaoke.volley:library:$dependenciesVersion.volley_version",
+            mcxiaoke_volley: "com.mcxiaoke.volley:library:$dependenciesVersion.mcxiaoke_volley_version",
 
             /** Squareup Retrofit2 */
-            squareup_retrofit2: "com.squareup.retrofit2:retrofit:$dependenciesVersion.retrofit2_version",
-            squareup_retrofit2_converter_moshi: "com.squareup.retrofit2:converter-moshi:$dependenciesVersion.retrofit2_converter_moshi_version",
+            squareup_retrofit2: "com.squareup.retrofit2:retrofit:$dependenciesVersion.squareup_retrofit2_version",
+            squareup_retrofit2_converter_moshi: "com.squareup.retrofit2:converter-moshi:$dependenciesVersion.squareup_retrofit2_converter_moshi_version",
+
+            /** Squareup Okhttp */
+            squareup_okhttp: "com.squareup.okhttp:okhttp:$dependenciesVersion.squareup_okhttp_version",
+
+            /** Squareup Okhttp3 */
+            squareup_okhttp3: "com.squareup.okhttp3:okhttp:$dependenciesVersion.squareup_okhttp3_version",
+
+            /** Squareup Okio */
+            squareup_okio: "com.squareup.okio:okio:$dependenciesVersion.squareup_okio_version",
 
             /** Squareup Leakcanary */
-            leakcanary: "com.squareup.leakcanary:leakcanary-android:$dependenciesVersion.leakcanary_version",
+            squareup_leakcanary: "com.squareup.leakcanary:leakcanary-android:$dependenciesVersion.squareup_leakcanary_version",
 
             /** Test */
             junit: "junit:junit:$dependenciesVersion.junit_version",

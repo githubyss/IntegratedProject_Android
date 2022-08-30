@@ -21,6 +21,7 @@ buildscript {
         classpath dependenciesLib.android_tools_build_gradle
         classpath dependenciesLib.kotlin_gradle_plugin
         // classpath dependenciesLib.kotlin_android_extensions
+        classpath dependenciesLib.greenrobot_greendao_gradle_plugin
         classpath dependenciesLib.neenbedankt_gradle_plugins_android_apt
         classpath dependenciesLib.alibaba_arouter_register
 

@@ -27,7 +27,6 @@ ext {
 
             /** Android Support */
             android_support_v7_version: '27.1.1',
-            android_support_material_design_version: '27.1.1',
 
             /** Androidx Compatibility */
             // androidx_appcompat_version: '1.3.1',
@@ -58,21 +57,21 @@ ext {
             androidx_lifecycle_extensions_version: '2.2.0',
 
             /** Androidx Room */
-            room_version: '2.4.3',
+            androidx_room_version: '2.4.3',
 
             /** Google Material */
-            material_design_version: '1.4.0',
+            google_material_version: '1.4.0',
 
             /** Google Flexbox */
-            // flexbox_version:'0.3.0-alpha3',
-            flexbox_version: '1.0.0',
+            // google_flexbox_version:'0.3.0-alpha3',
+            google_flexbox_version: '1.0.0',
 
             /** Google Gson */
-            gson_version: '2.8.6',
+            google_gson_version: '2.8.6',
 
             /** Google Zxing */
-            zxing_version: '3.5.0',
-            zxing_android_version: '3.3.0',
+            google_zxing_version: '3.5.0',
+            google_zxing_android_version: '3.3.0',
 
             /** Zxing Android Embedded */
             zxing_android_embedded_version: '4.3.0',
@@ -81,8 +80,10 @@ ext {
             zxing_lite_version: '1.1.3-androidx',
 
             /** Bumptech Glide */
-            glide_api_version: '4.12.0',
-            glide_compile_version: '4.12.0',
+            bumptech_glide_version: '4.12.0',
+
+            /** Airbnb Lottie */
+            airbnb_lottie_version: '5.2.0',
 
             /** Coil */
             coil_version: '1.4.0',
@@ -91,34 +92,52 @@ ext {
             joda_time_version: '2.10.9',
 
             /** Alibaba ARouter */
-            arouter_api_version: '1.3.1',
-            arouter_compile_version: '1.1.4',
-            arouter_annotation_version: '1.0.4',
-            arouter_register_version: '1.0.2', // 工程模块共有依赖
+            alibaba_arouter_version: '1.3.1',
+            alibaba_arouter_compile_version: '1.1.4',
+            alibaba_arouter_annotation_version: '1.0.4',
+            alibaba_arouter_register_version: '1.0.2', // 工程模块共有依赖
 
             /** Tencent Wechat */
-            wechat_version: '6.8.0',
+            tencent_wechat_version: '6.8.0',
 
             /** Greenrobot Eventbus */
-            eventbus_version: '3.1.1',
+            greenrobot_eventbus_version: '3.1.1',
 
-            /** RxAndroid */
-            rxandroid_version: '1.0.0',
-            rxandroid3_version: '3.0.0',
+            /** Greenrobot Greendao */
+            greenrobot_greendao_version: '3.3.0',
+
+            /** Reactivex RxAndroid */
+            reactivex_rxjava_version: '1.3.8',
+            reactivex_rxandroid_version: '1.2.1',
+            reactivex_rxjava3_version: '3.1.5',
+            reactivex_rxkotlin3_version: '3.0.1',
+            reactivex_rxandroid3_version: '3.0.0',
 
             /** Apache Http */
-            httpcore_version: '4.4.10',
-            httpmime_version: '4.5.6',
+            apache_httpcore_version: '4.4.10',
+            apache_httpmime_version: '4.5.6',
 
             /** Mcxiaoke Volley */
-            volley_version: '1.0.19',
+            mcxiaoke_volley_version: '1.0.19',
 
             /** Squareup Retrofit2 */
-            retrofit2_version: '2.8.1',
-            retrofit2_converter_moshi_version: '2.6.2',
+            squareup_retrofit2_version: '2.8.1',
+            squareup_retrofit2_converter_moshi_version: '2.6.2',
+
+            /** Squareup Okhttp */
+            squareup_okhttp_version: '2.7.5',
+
+            /** Squareup Okhttp3 */
+            squareup_okhttp3_version: '4.9.3',
+
+            /** Squareup Okio */
+            squareup_okio_version: '3.2.0',
 
             /** Squareup Leakcanary */
-            leakcanary_version: '2.9.1',
+            squareup_leakcanary_version: '2.9.1',
+
+            /** Lzy Okio */
+            lzy_okgo_version: '3.0.4',
 
             /** Test */
             junit_version: '4.13.1',
@@ -128,17 +147,9 @@ ext {
             androidx_test_compose_version: '1.0.5',
 
             // runner: "1.0.2",
-            // okhttp3: "3.8.1",
-            // okio: "1.13.0",
-            // okgo: "3.0.4",
             // immersionbar: "3.0.0",
             // mpandroidchart: "v3.1.0",
             // annotation: "1.1.0",
-            // zxing: "3.3.0",
-            // glide: "4.11.0",
-            // greendao: "3.2.2",
-            // room_runtime: '2.2.5',
-            // room_compiler: '2.2.5',
             // koin: '3.1.2',
     ]
 }
